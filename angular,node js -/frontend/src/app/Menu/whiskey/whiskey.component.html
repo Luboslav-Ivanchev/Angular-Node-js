@@ -1,0 +1,269 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Page Title</title>
+</head>
+<body>
+
+
+
+<div style="text-align: center">
+
+  <a href="LoggedInSuccessfully/liquids/non-alcoholic"> <button class="button button2">Non-alcoholic</button></a>
+
+  <a href="LoggedInSuccessfully/liquids/beer"> <button class="button button1">Beer</button>  </a>
+  <a href="LoggedInSuccessfully/liquids/wine">  <button class="button button3">Wine</button> </a>
+  <a href="LoggedInSuccessfully/liquids">  <button class="button button4">Back to main page</button>    </a>
+  <a href="LoggedInSuccessfully/liquids/cocktails">  <button class="button button5" >Cocktails</button>  </a>
+
+</div>
+
+
+
+
+
+
+<div class="containerLiquids">
+
+
+
+  <div class="whiskey">
+
+    <div class="switcher__item__containers">
+      <div class="boxCheck">
+        <p class="headers" >Blended  whisky</p>
+        <label class="switch">
+          <input type="checkbox" (click)="blended($event)">
+          <span class="slider round"></span>
+        </label>
+      </div>
+      &nbsp;
+      &nbsp;
+      &nbsp;
+      <div class="boxCheck">
+        <p class="headers">Malt Whisky</p>
+        <label class="switch">
+          <input type="checkbox" (click)="malt($event)">
+          <span class="slider round"></span>
+        </label>
+      </div>
+      &nbsp;
+      &nbsp;
+      &nbsp;
+
+      <div class="boxCheck">
+        <p class="headers">Single malt</p>
+        <label class="switch">
+          <input type="checkbox" (click)="single($event)">
+          <span class="slider round"></span>
+        </label>
+      </div>
+
+    </div>
+
+    <div class="containerWhiskey">
+
+      <div class="box">
+        <div class="product-item-wrapper">
+          <a href="" style="text-align: center">
+            <img src="../../../assets/whiskey/3._Koval_Four_Grain_Single_Barrel_Whiskey.webp" height="175" width="380" class="images"/>
+          </a>
+          <br>
+          <h3 data-key="1" class="textHead">Koval 500 ML</h3>
+
+          <ul class="price"  style="list-style: none">
+            <li><p class="text" data-key="1">78.99 lv | 500 ML</p></li>
+          </ul>
+          <ul class="product-action" >
+            <button class="button9" data-key="1" (click)="change($event)">Change</button>
+
+            <button  class="button10" data-key="1" (click)="buyElement($event)">Buy</button>
+          </ul>
+
+          <div  style="text-align: center" >
+            <p class="text" >Weight | Final price</p>
+            <button data-key="1" class="button9"  (click)="minus($event)">-</button>
+            <input data-key="1" class="weight"  type="text"><cite style="font-weight: bold;font-size: 25px">|</cite>
+            <input data-key="1" class="prices"  type="text">
+            <button data-key="1"   class="button10" (click)="plus($event)">+</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="product-item-wrapper">
+          <a href="" style="text-align: center">
+
+            <img src="../../../assets/whiskey/1563203612-ci-johnnie-walker-black-label-22021747b4b37f02.jpg" height="190" width="380" class="images"/>
+          </a>
+          <br>
+          <h3 data-key="2" class="textHead">Black 750 ML</h3>
+
+          <ul class="price"  style="list-style: none">
+            <li><p class="text" data-key="2">85.99 lv | 500 ML</p></li>
+          </ul>
+          <ul class="product-action" >
+            <button class="button9" data-key="2" (click)="change($event)">Change</button>
+
+            <button  class="button10" data-key="2" (click)="buyElement($event)">Buy</button>
+          </ul>
+
+          <div  style="text-align: center" >
+            <p class="text" >Weight | Final price</p>
+            <button data-key="2" class="button9" (click)="minus($event)">-</button>
+            <input data-key="2" class="weight"  type="text"><cite style="font-weight: bold;font-size: 25px">|</cite>
+            <input data-key="2" class="prices"  type="text">
+            <button data-key="2"   class="button10" (click)="plus($event)">+</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="product-item-wrapper">
+          <a href="" style="text-align: center">
+            <img src="../../../assets/whiskey/uiski-jameson-1-l-6273b65a33c74_800x800.jpeg" height="190" width="380" class="images"/>
+          </a>
+          <br>
+          <h3 data-key="3" class="textHead">Jameson 750 ML</h3>
+
+          <ul class="price"  style="list-style: none">
+            <li><p class="text" data-key="3">102.99 lv | 750 ML</p></li>
+          </ul>
+          <ul class="product-action" >
+            <button class="button9" data-key="3" (click)="change($event)">Change</button>
+
+            <button  class="button10" data-key="3" (click)="buyElement($event)">Buy</button>
+          </ul>
+
+          <div  style="text-align: center" >
+            <p class="text" >Weight | Final price</p>
+            <button data-key="3" class="button9"  (click)="minus($event)">-</button>
+            <input data-key="3" class="weight"  type="text"><cite style="font-weight: bold;font-size: 25px">|</cite>
+            <input data-key="3" class="prices"  type="text">
+            <button data-key="3" class="button10" (click)="plus($event)">+</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="product-item-wrapper">
+          <a href="" style="text-align: center">
+            <img  src="../../../assets/whiskey/Uiski-Glenlivet-Master-Distillers-Reserve-1-l-1000x1000.jpg.webp" height="190" width="380" class="images"/>
+          </a>
+          <br>
+          <h3 data-key="4" class="textHead">The Glenlivet 750 ML</h3>
+
+          <ul class="price"  style="list-style: none">
+            <li><p class="text" data-key="4">75.99 lv | 750 ML</p></li>
+          </ul>
+          <ul class="product-action" >
+            <button class="button9" data-key="4" (click)="change($event)">Change</button>
+
+            <button  class="button10" data-key="4" (click)="buyElement($event)">Buy</button>
+          </ul>
+
+          <div  style="text-align: center" >
+            <p class="text" >Weight | Final price</p>
+            <button data-key="4" class="button9"  (click)="minus($event)">-</button>
+            <input data-key="4" class="weight"  type="text"><cite style="font-weight: bold;font-size: 25px">|</cite>
+            <input data-key="4" class="prices"  type="text">
+            <button data-key="4"  class="button10" (click)="plus($event)">+</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="product-item-wrapper">
+          <a href="" style="text-align: center">
+
+            <img src="../../../assets/whiskey/uiski-bowmore-islay-12-y-o--0-7-lit-62b5b2c3bee60_1280x1280.jpeg" height="190" width="380" class="images"/>
+          </a>
+          <br>
+          <h3 data-key="5" class="textHead">Bowmore 750 ML</h3>
+
+          <ul class="price"  style="list-style: none">
+            <li><p class="text" data-key="5">67.99 lv | 750 ML</p></li>
+          </ul>
+          <ul class="product-action" >
+            <button class="button9" data-key="5" (click)="change($event)">Change</button>
+
+            <button  class="button10" data-key="5" (click)="buyElement($event)">Buy</button>
+          </ul>
+
+          <div  style="text-align: center" >
+            <p class="text" >Weight | Final price</p>
+            <button data-key="5" class="button9" (click)="minus($event)">-</button>
+            <input data-key="5" class="weight"  type="text"><cite style="font-weight: bold;font-size: 25px">|</cite>
+            <input data-key="5" class="prices"  type="text">
+            <button data-key="5"   class="button10" (click)="plus($event)">+</button>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="box">
+        <div class="product-item-wrapper">
+          <a href="" style="text-align: center">
+
+            <img src="../../../assets/whiskey/top-20-whiskey-brands_internal_canadianclub.webp" height="190" width="380" class="images"/>
+          </a>
+          <br>
+          <h3 data-key="6" class="textHead">Banadian Blub 750 ML</h3>
+
+          <ul class="price"  style="list-style: none">
+            <li><p class="text" data-key="6" style="font-size: 20px;">54.99 lv | 750 ML</p></li>
+          </ul>
+          <ul class="product-action" >
+            <button class="button9" data-key="6" (click)="change($event)">Change</button>
+
+            <button  class="button10" data-key="6" (click)="buyElement($event)">Buy</button>
+          </ul>
+
+          <div  style="text-align: center" >
+            <p class="text">Weight | Final price</p>
+            <button data-key="6" class="button9"  (click)="minus($event)">-</button>
+            <input data-key="6" class="weight"  type="text"><cite style="font-weight: bold;font-size: 25px">|</cite>
+            <input data-key="6" class="prices"  type="text">
+            <button data-key="6"   class="button10" (click)="plus($event)">+</button>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="box">
+        <div class="product-item-wrapper">
+          <a href="" style="text-align: center">
+
+            <img src="../../../assets/whiskey/jack-daniels-image_60b34d59151dd_800x800.jpeg" height="200" width="380" class="images"/>
+          </a>
+          <br>
+          <h3 data-key="6" class="textHead">Jack Daniels 750 ML</h3>
+
+          <ul class="price"  style="list-style: none">
+            <li><p class="text" data-key="6">120.99 lv | 750 ML</p></li>
+          </ul>
+          <ul class="product-action" >
+            <button class="button9" data-key="6" (click)="change($event)">Change</button>
+
+            <button  class="button10" data-key="6" (click)="buyElement($event)">Buy</button>
+          </ul>
+
+          <div  style="text-align: center" >
+            <p class="text" >Weight | Final price</p>
+            <button data-key="6" class="button9" (click)="minus($event)">-</button>
+            <input data-key="6" class="weight"  type="text"><cite style="font-weight: bold;font-size: 25px">|</cite>
+            <input data-key="6" class="prices"  type="text">
+            <button data-key="6"  class="button10" (click)="plus($event)">+</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+
+</body>
+</html>

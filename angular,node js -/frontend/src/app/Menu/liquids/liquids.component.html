@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Page Title</title>
+</head>
+<body>
+
+
+<div class="if" *ngIf="urlStatement==='LoggedInSuccessfully'">
+
+  <section id="food-menu">
+    <h2 class="food-menu-heading">Liquids Menu</h2>
+    <div class="food-menu-container container">
+
+      <div class="food-menu-item">
+        <br>
+        <div class="title">
+          <a href="LoggedInSuccessfully/liquids/non-alcoholic" class="viewBtn"><img src="../../../assets/Non-alcoholic/fit_600_376 (2).png" height="376" width="600"/>
+          </a>
+        </div>
+        <div class="food-description">
+          <h2 class="food-titile"><a href="LoggedInSuccessfully/liquids/non-alcoholic" class="viewBtn">Non Alcoholic</a></h2>
+          <p>
+            The best non-alcoholic drink alternatives – from alcohol-free beer, wine, Prosecco and spirits (hello, non-alcoholic gin!)
+          </p>
+          <a href="LoggedInSuccessfully/liquids/non-alcoholic" class="btn btn-primary">Check out the menu></a>
+        </div>
+      </div>
+
+      <div class="food-menu-item">
+        <div class="title">
+          <a href="LoggedInSuccessfully/liquids/beer" class="viewBtn"><img src="../../../assets/beer/fit_600_376 (9).png" height="376" width="600"/>
+          </a>
+        </div>
+        <div class="food-description">
+          <h2 class="food-titile"><a href="LoggedInSuccessfully/liquids/beer" class="viewBtn">Beer</a></h2>
+          <p>
+            Beer is one of the oldest and the most widely consumed type of alcoholic drink in the world. The third most popular drink!
+          </p>
+          <a href="LoggedInSuccessfully/liquids/beer" class="btn btn-primary">Check out the menu></a>
+        </div>
+      </div>
+
+      <div class="food-menu-item">
+        <div class="title">
+          <a href="LoggedInSuccessfully/liquids/cocktails" class="viewBtn"><img src="../../../assets/cocktails/how-to-make-layered-cocktails-fs.png" height="1500"
+                                                            width="1000"/>
+          </a>
+        </div>
+        <div class="food-description">
+          <h2 class="food-titile"><a href="LoggedInSuccessfully/liquids/cocktails" class="viewBtn">Cocktails</a></h2>
+          <p>
+            From canonical classics to obscure tiki drinks, these are the 50 most popular cocktails served at the world's best bars in 2022.
+            Extra condiments available upon request for an additional charge.
+          </p>
+          <a href="LoggedInSuccessfully/liquids/cocktails" class="btn btn-primary">Check out the menu></a>
+        </div>
+      </div>
+
+      <div class="food-menu-item">
+        <div class="title">
+          <a href="LoggedInSuccessfully/liquids/whiskey" class="viewBtn"><img src="../../../assets/whiskey/uiski-jameson-1-l-6273b65a33c74_800x800.jpeg" height="800"
+                                                          width="800"/>
+          </a>
+        </div>
+        <div class="food-description">
+          <h2 class="food-titile"><a href="LoggedInSuccessfully/liquids/whiskey" class="viewBtn">Whiskey</a></h2>
+          <p>
+            Whisky or whiskey is a type of distilled alcoholic beverage made from fermented grain mash. Various grains (which may be malted)!
+          </p>
+          <a href="LoggedInSuccessfully/liquids/whiskey" class="btn btn-primary">Check out the menu></a>
+        </div>
+      </div>
+
+      <div class="food-menu-item">
+        <div class="title">
+          <a href="LoggedInSuccessfully/liquids/wine" class="viewBtn"><img src="../../../assets/wines/fit_600_376dfg.png" height="376" width="600"/>
+          </a>
+        </div>
+        <div class="food-description">
+          <h2 class="food-titile"><a href="LoggedInSuccessfully/liquids/wine" class="viewBtn">Wines</a></h2>
+          <p>
+            Wine is an alcoholic drink typically made from fermented grapes. Yeast consumes the sugar in the grapes and converts it to ethanol and carbon dioxide, releasing heat in the process!
+          </p>
+          <a href="LoggedInSuccessfully/liquids/wine" class="btn btn-primary">Check out the menu></a>
+        </div>
+      </div>
+
+
+
+    </div>
+  </section>
+</div>
+
+<div class="ifNot" *ngIf="urlStatement!=='LoggedInSuccessfully'" >
+
+  <section id="food-menu">
+    <h2 class="food-menu-heading">Liquids Menu</h2>
+    <div class="food-menu-container container">
+
+      <div class="food-menu-item">
+        <br>
+        <div class="title">
+          <a href="/liquids/non-alcoholic" class="viewBtn"><img src="../../../assets/Non-alcoholic/fit_600_376 (2).png" height="376" width="600"/>
+          </a>
+        </div>
+        <div class="food-description">
+          <h2 class="food-titile"><a href="/liquids/non-alcoholic" class="viewBtn">Non Alcoholic</a></h2>
+          <p>
+            The best non-alcoholic drink alternatives – from alcohol-free beer, wine, Prosecco and spirits (hello, non-alcoholic gin!)
+          </p>
+          <a href="/liquids/non-alcoholic" class="btn btn-primary">Check out the menu></a>
+        </div>
+      </div>
+
+      <div class="food-menu-item">
+        <div class="title">
+          <a href="/liquids/beer" class="viewBtn"><img src="../../../assets/beer/fit_600_376 (9).png" height="376" width="600"/>
+          </a>
+        </div>
+        <div class="food-description">
+          <h2 class="food-titile"><a href="/liquids/beer" class="viewBtn">Beer</a></h2>
+          <p>
+            Beer is one of the oldest and the most widely consumed type of alcoholic drink in the world. The third most popular drink!
+          </p>
+          <a href="/liquids/beer" class="btn btn-primary">Check out the menu></a>
+        </div>
+      </div>
+
+      <div class="food-menu-item">
+        <div class="title">
+          <a href="/liquids/cocktails" class="viewBtn"><img src="../../../assets/cocktails/how-to-make-layered-cocktails-fs.png" height="1500"
+                                                            width="1000"/>
+          </a>
+        </div>
+        <div class="food-description">
+          <h2 class="food-titile"><a href="/liquids/cocktails" class="viewBtn">Cocktails</a></h2>
+          <p>
+            From canonical classics to obscure tiki drinks, these are the 50 most popular cocktails served at the world's best bars in 2022.
+            Extra condiments available upon request for an additional charge.
+          </p>
+          <a href="/liquids/cocktails" class="btn btn-primary">Check out the menu></a>
+        </div>
+      </div>
+
+      <div class="food-menu-item">
+        <div class="title">
+          <a href="/liquids/whiskey" class="viewBtn"><img src="../../../assets/whiskey/uiski-jameson-1-l-6273b65a33c74_800x800.jpeg" height="800"
+                                                          width="800"/>
+          </a>
+        </div>
+        <div class="food-description">
+          <h2 class="food-titile"><a href="/liquids/whiskey" class="viewBtn">Whiskey</a></h2>
+          <p>
+            Whisky or whiskey is a type of distilled alcoholic beverage made from fermented grain mash. Various grains (which may be malted)!
+          </p>
+          <a href="/liquids/whiskey" class="btn btn-primary">Check out the menu></a>
+        </div>
+      </div>
+
+      <div class="food-menu-item">
+        <div class="title">
+          <a href="liquids/wine" class="viewBtn"><img src="../../../assets/wines/fit_600_376dfg.png" height="376" width="600"/>
+          </a>
+        </div>
+        <div class="food-description">
+          <h2 class="food-titile"><a href="liquids/wine" class="viewBtn">Wines</a></h2>
+          <p>
+            Wine is an alcoholic drink typically made from fermented grapes. Yeast consumes the sugar in the grapes and converts it to ethanol and carbon dioxide, releasing heat in the process!
+          </p>
+          <a href="liquids/wine" class="btn btn-primary">Check out the menu></a>
+        </div>
+      </div>
+
+
+
+    </div>
+  </section>
+</div>
+
+
+
+</body>
+</html>

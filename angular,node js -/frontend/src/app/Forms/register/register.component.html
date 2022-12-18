@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<!-- Created By CodingLab - www.codinglabweb.com -->
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <!---<title> Responsive Registration Form | CodingLab </title>--->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<div class="container">
+
+  <header>Registration</header>
+
+  <form action="#" class="formRegister" [formGroup]="registerForm" (ngSubmit)="register($event)"   >
+    <div class="form first">
+      <div class="details personal">
+        <span class="title">Details for your registration</span>
+
+        <div class="fields">
+
+          <div class="input-field">
+            <label>Name</label>
+            <input type="text" id="name" placeholder="Enter your firstname" required formControlName="name">
+          </div>
+
+
+          <div class="input-field">
+            <label>Email</label>
+            <input type="text" id="email" placeholder="Enter your email" required formControlName="email">
+          </div>
+
+
+          <div class="input-field">
+            <label>Password</label>
+            <input type="password" id="password" placeholder="Enter your password" required  formControlName="password" >
+
+          </div>
+
+          <div class="input-field">
+            <label>Repeat Password</label>
+            <input type="password" id="repeatPassword" placeholder="Enter your repeat-password" required formControlName="repeatPassword">
+          </div>
+
+
+        </div>
+      </div>
+
+      <div id="addInputs">
+
+        <div class="details ID">
+          <span class="title">Personal Details if you want!</span>
+
+
+          <div class="fields">
+
+          <div class="fields" formGroupName="personalInformation">
+
+            <div class="input-field">
+              <label>Username</label>
+              <input type="text" placeholder="Enter your Username" required formControlName="userName">
+            </div>
+            <div class="input-field">
+              <label>Country</label>
+              <input type="text" placeholder="Enter your country" required formControlName="country">
+            </div>
+
+            <div class="input-field">
+              <label>Town</label>
+              <input type="text" placeholder="Enter your town" required formControlName="city">
+            </div>
+
+
+            <div class="input-field">
+              <label>Address on your street</label>
+              <input type="text" placeholder="Enter address on your street" required formControlName="addressLine">
+            </div>
+
+            <div class="input-field">
+              <label>Height</label>
+              <input type="text" placeholder="Enter your height" required formControlName="height">
+            </div>
+
+            <div class="input-field">
+              <label>Weight</label>
+              <input type="text" placeholder="Enter your weight" required formControlName="weight">
+            </div>
+
+            <div class="input-field">
+              <label>Mobile Number</label>
+              <input type="text" placeholder="Enter your mobile number" required formControlName="phoneNumber">
+            </div>
+
+            <div class="input-field">
+              <label>Security Question</label>
+              <input type="text" placeholder="Enter your security question" required formControlName="securityQuestion">
+            </div>
+
+
+
+          </div>
+        </div>
+      </div>
+
+      <button style="text-align: center" type="submit"  id="register" >Make your Registration!</button>
+
+      <div class="visible-div">
+        <p id="textP">{{result}}</p>
+        <div>
+          <p></p>
+        </div>
+      </div>
+    </div>
+    </div>
+  </form>
+
+  <br>
+
+  <div class="container signin">
+    <p>Already have an account?<a href="/login" style="text-decoration: none">Sign in</a>.</p>
+  </div>
+
+</div>
+
+</body>
+</html>
+

@@ -1,0 +1,289 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Page Title</title>
+</head>
+<body>
+
+
+<div class="ifNot"  *ngIf="urlStatement!=='LoggedInSuccessfully'">
+  <div class="container" >
+    <div class="box" *ngFor="let data of info">
+
+      <div class="product-item-wrapper">
+        <a class="link" [routerLink]="['/dish',data[0].headerInfo]">
+          <img src="{{data[0].img}}" height="170" width="370" class="img"/></a>
+        <h3 data-key="1"  style="text-align: center;">{{data[0].headerInfo}}</h3>
+        <p class="text">{{data[0].text}}</p>
+        <ul class="price">
+          <li><p  class="text" data-key="1" style="font-size: 20px"> 12,99 lv | 390 gr</p></li>
+        </ul>
+        <ul class="product-action">
+          <a class="link" [routerLink]="['/dish',data[0].headerInfo]"> <button class="button button3" data-key="12">Change</button></a>
+          <button  class="button button1" data-key="1" (click)="buyElement($event)">Buy</button>
+        </ul>
+      </div>
+
+      <div class="product-item-wrapper">
+        <a class="link" [routerLink]="['/dish',data[1].headerInfo]">
+          <img src="{{data[1].img}}" height="170" width="370" class="img"/></a>
+        <h3 data-key="1"  style="text-align: center;">{{data[1].headerInfo}}</h3>
+        <p class="text">{{data[1].text}}</p>
+        <ul class="price">
+          <li><p  class="text" data-key="1" style="font-size: 20px"> 12,99 lv | 390 gr</p></li>
+        </ul>
+        <ul class="product-action">
+          <a class="link" [routerLink]="['/dish',data[1].headerInfo]"> <button class="button button3" data-key="12">Change</button></a>
+          <button  class="button button1" data-key="1" (click)="buyElement($event)">Buy</button>
+        </ul>
+      </div>
+
+      <div class="product-item-wrapper">
+        <a class="link" [routerLink]="['/dish',data[2].headerInfo]">
+          <img src="{{data[2].img}}" height="170" width="370" class="img"/></a>
+        <h3 data-key="1"  style="text-align: center;">{{data[2].headerInfo}}</h3>
+        <p class="text">{{data[2].text}}</p>
+        <ul class="price">
+          <li><p  class="text" data-key="1" style="font-size: 20px"> 12,99 lv | 390 gr</p></li>
+        </ul>
+        <ul class="product-action">
+          <a class="link" [routerLink]="['/dish',data[2].headerInfo]"> <button class="button button3" data-key="12">Change</button></a>
+          <button  class="button button1" data-key="1" (click)="buyElement($event)">Buy</button>
+        </ul>
+      </div>
+
+
+      <div class="product-item-wrapper">
+        <a class="link" [routerLink]="['/dish',data[3].headerInfo]">
+          <img src="{{data[3].img}}" height="170" width="370" class="img"/></a>
+        <h3 data-key="1"  style="text-align: center;">{{data[3].headerInfo}}</h3>
+        <p class="text">{{data[3].text}}</p>
+        <ul class="price">
+          <li><p  class="text" data-key="1" style="font-size: 20px"> 12,99 lv | 390 gr</p></li>
+        </ul>
+        <ul class="product-action">
+          <a class="link" [routerLink]="['/dish',data[3].headerInfo]"> <button class="button button3" data-key="12">Change</button></a>
+          <button  class="button button1" data-key="1" (click)="buyElement($event)">Buy</button>
+        </ul>
+      </div>
+
+
+      <div class="product-item-wrapper">
+        <a class="link" [routerLink]="['/dish',data[4].headerInfo]">
+          <img src="{{data[4].img}}" height="170" width="370" class="img"/></a>
+        <h3 data-key="1"  style="text-align: center;">{{data[4].headerInfo}}</h3>
+        <p class="text">{{data[4].text}}</p>
+        <ul class="price">
+          <li><p  class="text" data-key="1" style="font-size: 20px"> 12,99 lv | 390 gr</p></li>
+        </ul>
+        <ul class="product-action">
+          <a class="link" [routerLink]="['/dish',data[4].headerInfo]"> <button class="button button3" data-key="12">Change</button></a>
+          <button  class="button button1" data-key="1" (click)="buyElement($event)">Buy</button>
+        </ul>
+      </div>
+
+      <div class="product-item-wrapper">
+        <a class="link" [routerLink]="['/dish',data[5].headerInfo]">
+          <img src="{{data[5].img}}" height="170" width="370" class="img"/></a>
+        <h3 data-key="1"  style="text-align: center;">{{data[5].headerInfo}}</h3>
+        <p class="text">{{data[5].text}}</p>
+        <ul class="price">
+          <li><p  class="text" data-key="1" style="font-size: 20px"> 12,99 lv | 390 gr</p></li>
+        </ul>
+        <ul class="product-action">
+          <a class="link" [routerLink]="['/dish',data[5].headerInfo]"> <button class="button button3" data-key="12">Change</button></a>
+          <button  class="button button1" data-key="1" (click)="buyElement($event)">Buy</button>
+        </ul>
+      </div>
+
+      <div class="product-item-wrapper">
+        <a class="link" [routerLink]="['/dish',data[6].headerInfo]">
+          <img src="{{data[6].img}}" height="170" width="370" class="img"/></a>
+        <h3 data-key="1"  style="text-align: center;">{{data[6].headerInfo}}</h3>
+        <p class="text">{{data[6].text}}</p>
+        <ul class="price">
+          <li><p  class="text" data-key="1" style="font-size: 20px"> 12,99 lv | 390 gr</p></li>
+        </ul>
+        <ul class="product-action">
+          <a class="link" [routerLink]="['/dish',data[6].headerInfo]"> <button class="button button3" data-key="12">Change</button></a>
+          <button  class="button button1" data-key="1" (click)="buyElement($event)">Buy</button>
+        </ul>
+      </div>
+
+      <div class="product-item-wrapper">
+        <a class="link" [routerLink]="['/dish',data[7].headerInfo]">
+          <img src="{{data[7].img}}" height="170" width="370" class="img"/></a>
+        <h3 data-key="1"  style="text-align: center;">{{data[7].headerInfo}}</h3>
+        <p class="text">{{data[7].text}}</p>
+        <ul class="price">
+          <li><p  class="text" data-key="1" style="font-size: 20px"> 12,99 lv | 390 gr</p></li>
+        </ul>
+        <ul class="product-action">
+          <a class="link" [routerLink]="['/dish',data[7].headerInfo]"> <button class="button button3" data-key="12">Change</button></a>
+          <button  class="button button1" data-key="1" (click)="buyElement($event)">Buy</button>
+        </ul>
+      </div>
+
+      <div class="product-item-wrapper">
+        <a class="link" [routerLink]="['/dish',data[8].headerInfo]">
+          <img src="{{data[8].img}}" height="170" width="370" class="img"/></a>
+        <h3 data-key="1"  style="text-align: center;">{{data[8].headerInfo}}</h3>
+        <p class="text">{{data[8].text}}</p>
+        <ul class="price">
+          <li><p  class="text" data-key="1" style="font-size: 20px"> 12,99 lv | 390 gr</p></li>
+        </ul>
+        <ul class="product-action">
+          <a class="link" [routerLink]="['/dish',data[8].headerInfo]"> <button class="button button3" data-key="12">Change</button></a>
+          <button  class="button button1" data-key="1" (click)="buyElement($event)">Buy</button>
+        </ul>
+      </div>
+
+
+    </div>
+  </div>
+</div>
+
+
+<div class="if"  *ngIf="urlStatement==='LoggedInSuccessfully'">
+  <div class="container" >
+    <div class="box" *ngFor="let data of info">
+
+      <div class="product-item-wrapper">
+        <a class="link" [routerLink]="['LoggedInSuccessfully/dish',data[0].headerInfo]">
+          <img src="{{data[0].img}}" height="170" width="370" class="img"/></a>
+        <h3 data-key="1"  style="text-align: center;">{{data[0].headerInfo}}</h3>
+        <p class="text">{{data[0].text}}</p>
+        <ul class="price">
+          <li><p  class="text" data-key="1" style="font-size: 20px"> 12,99 lv | 390 gr</p></li>
+        </ul>
+        <ul class="product-action">
+          <a class="link" [routerLink]="['LoggedInSuccessfully/dish',data[0].headerInfo]"> <button class="button button3" data-key="12">Change</button></a>
+          <button  class="button button1" data-key="1" (click)="buyElement($event)">Buy</button>
+        </ul>
+      </div>
+
+      <div class="product-item-wrapper">
+        <a class="link" [routerLink]="['LoggedInSuccessfully/dish',data[1].headerInfo]">
+          <img src="{{data[1].img}}" height="170" width="370" class="img"/></a>
+        <h3 data-key="1"  style="text-align: center;">{{data[1].headerInfo}}</h3>
+        <p class="text">{{data[1].text}}</p>
+        <ul class="price">
+          <li><p  class="text" data-key="1" style="font-size: 20px"> 12,99 lv | 390 gr</p></li>
+        </ul>
+        <ul class="product-action">
+          <a class="link" [routerLink]="['LoggedInSuccessfully/dish',data[1].headerInfo]"> <button class="button button3" data-key="12">Change</button></a>
+          <button  class="button button1" data-key="1" (click)="buyElement($event)">Buy</button>
+        </ul>
+      </div>
+
+      <div class="product-item-wrapper">
+        <a class="link" [routerLink]="['LoggedInSuccessfully/dish',data[2].headerInfo]">
+          <img src="{{data[2].img}}" height="170" width="370" class="img"/></a>
+        <h3 data-key="1"  style="text-align: center;">{{data[2].headerInfo}}</h3>
+        <p class="text">{{data[2].text}}</p>
+        <ul class="price">
+          <li><p  class="text" data-key="1" style="font-size: 20px"> 12,99 lv | 390 gr</p></li>
+        </ul>
+        <ul class="product-action">
+          <a class="link" [routerLink]="['LoggedInSuccessfully/dish',data[2].headerInfo]"> <button class="button button3" data-key="12">Change</button></a>
+          <button  class="button button1" data-key="1" (click)="buyElement($event)">Buy</button>
+        </ul>
+      </div>
+
+
+      <div class="product-item-wrapper">
+        <a class="link" [routerLink]="['LoggedInSuccessfully/dish',data[3].headerInfo]">
+          <img src="{{data[3].img}}" height="170" width="370" class="img"/></a>
+        <h3 data-key="1"  style="text-align: center;">{{data[3].headerInfo}}</h3>
+        <p class="text">{{data[3].text}}</p>
+        <ul class="price">
+          <li><p  class="text" data-key="1" style="font-size: 20px"> 12,99 lv | 390 gr</p></li>
+        </ul>
+        <ul class="product-action">
+          <a class="link" [routerLink]="['LoggedInSuccessfully/dish',data[3].headerInfo]"> <button class="button button3" data-key="12">Change</button></a>
+          <button  class="button button1" data-key="1" (click)="buyElement($event)">Buy</button>
+        </ul>
+      </div>
+
+
+      <div class="product-item-wrapper">
+        <a class="link" [routerLink]="['LoggedInSuccessfully/dish',data[4].headerInfo]">
+          <img src="{{data[4].img}}" height="170" width="370" class="img"/></a>
+        <h3 data-key="1"  style="text-align: center;">{{data[4].headerInfo}}</h3>
+        <p class="text">{{data[4].text}}</p>
+        <ul class="price">
+          <li><p  class="text" data-key="1" style="font-size: 20px"> 12,99 lv | 390 gr</p></li>
+        </ul>
+        <ul class="product-action">
+          <a class="link" [routerLink]="['LoggedInSuccessfully/dish',data[4].headerInfo]"> <button class="button button3" data-key="12">Change</button></a>
+          <button  class="button button1" data-key="1" (click)="buyElement($event)">Buy</button>
+        </ul>
+      </div>
+
+      <div class="product-item-wrapper">
+        <a class="link" [routerLink]="['LoggedInSuccessfully/dish',data[5].headerInfo]">
+          <img src="{{data[5].img}}" height="170" width="370" class="img"/></a>
+        <h3 data-key="1"  style="text-align: center;">{{data[5].headerInfo}}</h3>
+        <p class="text">{{data[5].text}}</p>
+        <ul class="price">
+          <li><p  class="text" data-key="1" style="font-size: 20px"> 12,99 lv | 390 gr</p></li>
+        </ul>
+        <ul class="product-action">
+          <a class="link" [routerLink]="['LoggedInSuccessfully/dish',data[5].headerInfo]"> <button class="button button3" data-key="12">Change</button></a>
+          <button  class="button button1" data-key="1" (click)="buyElement($event)">Buy</button>
+        </ul>
+      </div>
+
+      <div class="product-item-wrapper">
+        <a class="link" [routerLink]="['LoggedInSuccessfully/dish',data[6].headerInfo]">
+          <img src="{{data[6].img}}" height="170" width="370" class="img"/></a>
+        <h3 data-key="1"  style="text-align: center;">{{data[6].headerInfo}}</h3>
+        <p class="text">{{data[6].text}}</p>
+        <ul class="price">
+          <li><p  class="text" data-key="1" style="font-size: 20px"> 12,99 lv | 390 gr</p></li>
+        </ul>
+        <ul class="product-action">
+          <a class="link" [routerLink]="['LoggedInSuccessfully/dish',data[6].headerInfo]"> <button class="button button3" data-key="12">Change</button></a>
+          <button  class="button button1" data-key="1" (click)="buyElement($event)">Buy</button>
+        </ul>
+      </div>
+
+      <div class="product-item-wrapper">
+        <a class="link" [routerLink]="['LoggedInSuccessfully/dish',data[7].headerInfo]">
+          <img src="{{data[7].img}}" height="170" width="370" class="img"/></a>
+        <h3 data-key="1"  style="text-align: center;">{{data[7].headerInfo}}</h3>
+        <p class="text">{{data[7].text}}</p>
+        <ul class="price">
+          <li><p  class="text" data-key="1" style="font-size: 20px"> 12,99 lv | 390 gr</p></li>
+        </ul>
+        <ul class="product-action">
+          <a class="link" [routerLink]="['LoggedInSuccessfully/dish',data[7].headerInfo]"> <button class="button button3" data-key="12">Change</button></a>
+          <button  class="button button1" data-key="1" (click)="buyElement($event)">Buy</button>
+        </ul>
+      </div>
+
+      <div class="product-item-wrapper">
+        <a class="link" [routerLink]="['LoggedInSuccessfully/dish',data[8].headerInfo]">
+          <img src="{{data[8].img}}" height="170" width="370" class="img"/></a>
+        <h3 data-key="1"  style="text-align: center;">{{data[8].headerInfo}}</h3>
+        <p class="text">{{data[8].text}}</p>
+        <ul class="price">
+          <li><p  class="text" data-key="1" style="font-size: 20px"> 12,99 lv | 390 gr</p></li>
+        </ul>
+        <ul class="product-action">
+          <a class="link" [routerLink]="['LoggedInSuccessfully/dish',data[8].headerInfo]"> <button class="button button3" data-key="12">Change</button></a>
+          <button  class="button button1" data-key="1" (click)="buyElement($event)">Buy</button>
+        </ul>
+      </div>
+
+
+    </div>
+  </div>
+
+</div>
+
+
+
+</body>
+</html>

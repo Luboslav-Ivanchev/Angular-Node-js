@@ -1,0 +1,364 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Page Title</title>
+</head>
+<body>
+
+
+
+<div class="if"  *ngIf="urlStatement==='LoggedInSuccessfully'">
+  <div class="container">
+
+    <ul *ngFor="let data of info">
+
+      <li>
+        <div class="boxes">
+          <img src="{{data[0].img}}" height="160" width="260" class="images"/>
+        </div>
+        <br>
+        <h3 data-key="1" class="textHeader" style="text-align: center;font-size: 20px">{{data[0].headerInfo}}</h3>
+        <p  class="text" data-key="1">{{data[0].price}} | {{data[0].weight}} gr</p>
+        <ul class="product-action" style="text-align: center">
+          <a class="link" [routerLink]="['LoggedInSuccessfully/burger',data[0].headerInfo]"> <button class="button button3" data-key="1">Change</button></a>
+          <button  class="button button1" (click)="buyElement($event)">Buy</button>
+        </ul>
+
+        <p class="display">Black Angus beef burger, bacon,
+          Irish cheddar, tomato, iceberg, red onion, aioli sauce, brioche bun, fries, Hellmans ketchup.</p>
+      </li>
+
+      <li>
+        <div class="boxes">
+          <img src="{{data[1].img}}" height="160" width="260" class="images"/></div>
+        <br>
+        <h3 data-key="2" class="textHeader" style="text-align: center;font-size: 20px">{{data[1].headerInfo}}</h3>
+        <p  class="text" data-key="2">{{data[1].price}}lv | {{data[1].weight}}gr</p>
+        <ul class="product-action" style="text-align: center">
+          <a class="link" [routerLink]="['LoggedInSuccessfully/burger',data[1].headerInfo]"> <button class="button button3" data-key="2">Change</button></a>
+          <button  class="button button1" (click)="buyElement($event)">Buy</button>
+        </ul>
+
+        <p class="display">Crispy chicken fillet, brioche bun,
+          Irish cheddar, tomato, pesto mayonnaise, soy-garlic mayonnaise, iceberg, fries and Hellmans ketchup.
+        </p>
+      </li>
+
+      <li>
+        <div class="boxes">
+          <img src="{{data[2].img}}" height="160" width="260" class="images"/></div>
+        <br>
+        <h3 data-key="3" class="textHeader" style="text-align: center;font-size: 20px">{{data[2].headerInfo}}</h3>
+        <p  class="text" data-key="3">{{data[2].price}}lv | {{data[2].weight}} gr</p>
+        <ul class="product-action" style="text-align: center">
+          <a class="link" [routerLink]="['LoggedInSuccessfully/burger',data[2].headerInfo]"> <button class="button button3" data-key="2">Change</button></a>
+          <button  class="button button1" (click)="buyElement($event)">Buy</button>
+        </ul>
+
+        <p class="display">Black Angus ground beef burger, Gouda cheese,
+          Irish cheddar, bacon, sauteed onions, mushroom mayonnaise, brioche bun, fries and Hellmans ketchup.</p>
+      </li>
+
+      <li>
+        <div class="boxes">
+          <img src="{{data[3].img}}" height="160" width="260" class="images" /></div>
+        <br>
+        <h3 data-key="4" class="textHeader" style="text-align: center;font-size: 20px">{{data[3].headerInfo}}</h3>
+        <p  class="text" data-key="4">{{data[3].price}}lv | {{data[3].weight}} gr</p>
+        <ul class="product-action" style="text-align: center">
+          <a class="link" [routerLink]="['LoggedInSuccessfully/burger',data[3].headerInfo]"> <button class="button button3" data-key="4">Change</button></a>
+          <button  class="button button1" (click)="buyElement($event)">Buy</button>
+        </ul>
+        <p class="display">Burger made with chopped Spanish Black Angus beef,
+          Cheddar cheese, soy-garlic mayonnaise, sauteed onions, pickles, brioche bun, fries, Hellmans ketchup.
+        </p>
+      </li>
+
+      <li>
+        <div class="boxes">
+          <img src="{{data[4].img}}" height="160" width="260" class="images" /></div>
+        <br>
+        <h3 data-key="5" class="textHeader" style="text-align: center;font-size: 20px">{{data[4].headerInfo}}</h3>
+        <p  class="text" data-key="5">{{data[4].price}}lv | {{data[4].weight}} gr</p>
+        <ul class="product-action" style="text-align: center">
+          <a class="link" [routerLink]="['LoggedInSuccessfully/burger',data[4].headerInfo]"> <button class="button button3" data-key="4">Change</button></a>
+          <button  class="button button1" (click)="buyElement($event)">Buy</button>
+        </ul>
+        <p class="display">Beef burger, Irish cheddar, pickles, special
+          mayonnaise, BBQ sauce, red onion, brioche bun, fries and Hellmans ketchup.</p>
+      </li>
+
+      <li>
+        <div class="boxes">
+          <img src="{{data[5].img}}" height="160" width="260" class="images" /></div>
+        <br>
+        <h3 data-key="6" class="textHeader" style="text-align: center;font-size: 20px">{{data[5].headerInfo}}</h3>
+        <p  class="text" data-key="6">{{data[5].price}}lv | {{data[5].weight}} gr</p>
+        <ul class="product-action" style="text-align: center">
+          <a class="link" [routerLink]="['LoggedInSuccessfully/burger',data[5].headerInfo]"> <button class="button button3" data-key="6">Change</button></a>
+          <button  class="button button1" (click)="buyElement($event)">Buy</button>
+        </ul>
+        <p class="display">Black Angus beef burger with mayonnaise, Irish cheddar, soy garlic mayonnaise, caramelized
+          onions, cow butter, brioche bun, fries and Hellmans ketchup.</p>
+      </li>
+
+      <li>
+        <div class="boxes">
+
+          <img src="{{data[6].img}}" height="160" width="260" class="images"/>
+        </div>
+        <br>
+        <h3 data-key="6" class="textHeader" style="text-align: center;font-size: 20px">Vegan burger</h3>
+        <p  class="text" data-key="6">{{data[6].price}}lv | {{data[6].weight}} gr</p>
+        <ul class="product-action" style="text-align: center">
+          <a class="link" [routerLink]="['LoggedInSuccessfully/burger',data[6].headerInfo]"> <button class="button button3" data-key="6">Change</button></a>
+          <button  class="button button1" (click)="buyElement($event)">Buy</button>
+        </ul>
+        <p class="display">Vegan veggie burger made from peas, beets, onions and spices, with vegan cheddar cheese, vegan mayo, iceberg, tomato, avocado,
+          red onion and vegan bread without butter and eggs, fries and Hellmans ketchup.</p>
+      </li>
+
+
+      <li>
+        <div class="boxes">
+          <img src="{{data[7].img}}" height="160" width="260" class="images"  /></div>
+        <br>
+        <h3 data-key="7" class="textHeader" style="text-align: center;font-size: 20px">{{data[7].headerInfo}}</h3>
+        <p  class="text" data-key="7">{{data[7].price}}lv | {{data[7].weight}}gr</p>
+        <ul class="product-action" style="text-align: center">
+          <a class="link" [routerLink]="['LoggedInSuccessfully/burger',data[7].headerInfo]"> <button class="button button3" data-key="7">Change</button></a>
+          <button  class="button button1" (click)="buyElement($event)">Buy</button>
+        </ul>
+        <p class="display">Pulled beef with caramelized onions, Irish cheddar, Philadelphia, mushroom mayo, tortilla and fries.</p>
+      </li>
+
+
+      <li>
+        <div class="boxes">
+          <img src="{{data[8].img}}"  height="160" width="260" class="images" /></div>
+        <br>
+        <h3 data-key="8" class="textHeader" style="text-align: center;font-size: 20px">Tortilla with crispy chicken</h3>
+        <p  class="text" data-key="8">{{data[8].price}}lv | {{data[8].weight}} gr</p>
+        <ul class="product-action" style="text-align: center">
+          <a class="link" [routerLink]="['LoggedInSuccessfully/burger',data[8].headerInfo]"> <button class="button button3" data-key="8">Change</button></a>
+          <button  class="button button1" (click)="buyElement($event)">Buy</button>
+        </ul>
+        <p class="display">Tomato tortilla, crispy chicken, iceberg,
+          fresh pepper, mixed cheddar and cheese, "snack" sauce, "Mexico" sauce, fries and Hellmans ketchup.</p>
+      </li>
+
+      <li>
+        <div class="boxes">
+          <img src="{{data[9].img}}"  height="140" width="240" class="images" /></div>
+        <br>
+        <h3 data-key="9" class="textHeader" style="text-align: center;font-size: 20px">{{data[9].headerInfo}}</h3>
+        <p  class="text" data-key="9">{{data[9].price}}lv | {{data[9].weight}} gr</p>
+        <ul class="product-action" style="text-align: center">
+          <a class="link" [routerLink]="['LoggedInSuccessfully/burger',data[9].headerInfo]"> <button class="button button3" data-key="9">Change</button></a>
+          <button  class="button button1" (click)="buyElement($event)">Buy</button>
+        </ul>
+        <p class="display">Quesadilla with chicken meat, caramelized onions, Philadelphia, tomato sauce with pepper, cheddar, mozzarella, milk sauce and fries.</p>
+      </li>
+
+
+      <li>
+        <div class="boxes">
+
+          <img src="{{data[10].img}}" height="160" width="260" class="images"/></div>
+        <br>
+        <h3 data-key="10" class="textHeader" style="text-align: center;font-size: 20px">Tortilla with crispy chicken</h3>
+        <p  class="text" data-key="10">{{data[10].price}}lv | {{data[10].weight}} gr</p>
+        <ul class="product-action" style="text-align: center">
+          <a class="link" [routerLink]="['LoggedInSuccessfully/burger',data[10].headerInfo]"> <button class="button button3" data-key="10">Change</button></a>
+          <button  class="button button1" (click)="buyElement($event)">Buy</button>
+        </ul>
+        <p class="display">With chopped Black Angus beef, Irish cheddar,
+          cheese, black pepper sauce, caramelized onions, tomato sauce, mushroom mayonnaise and fries.</p>
+      </li>
+
+
+    </ul>
+
+  </div>
+</div>
+
+<div class="ifNot"  *ngIf="urlStatement!=='LoggedInSuccessfully'">
+  <div class="container">
+
+    <ul *ngFor="let data of info">
+
+      <li>
+        <div class="boxes">
+          <img src="{{data[0].img}}" height="160" width="260" class="images"/>
+        </div>
+        <br>
+        <h3 data-key="1" class="textHeader" style="text-align: center;font-size: 20px">{{data[0].headerInfo}}</h3>
+        <p  class="text" data-key="1">{{data[0].price}} | {{data[0].weight}} gr</p>
+        <ul class="product-action" style="text-align: center">
+          <a class="link" [routerLink]="['/burger',data[0].headerInfo]"> <button class="button button3" data-key="1">Change</button></a>
+          <button  class="button button1" (click)="buyElement($event)">Buy</button>
+        </ul>
+
+        <p class="display">Black Angus beef burger, bacon,
+          Irish cheddar, tomato, iceberg, red onion, aioli sauce, brioche bun, fries, Hellmans ketchup.</p>
+      </li>
+
+      <li>
+        <div class="boxes">
+          <img src="{{data[1].img}}" height="160" width="260" class="images"/></div>
+        <br>
+        <h3 data-key="2" class="textHeader" style="text-align: center;font-size: 20px">{{data[1].headerInfo}}</h3>
+        <p  class="text" data-key="2">{{data[1].price}}lv | {{data[1].weight}}gr</p>
+        <ul class="product-action" style="text-align: center">
+          <a class="link" [routerLink]="['/burger',data[1].headerInfo]"> <button class="button button3" data-key="2">Change</button></a>
+          <button  class="button button1" (click)="buyElement($event)">Buy</button>
+        </ul>
+
+        <p class="display">Crispy chicken fillet, brioche bun,
+          Irish cheddar, tomato, pesto mayonnaise, soy-garlic mayonnaise, iceberg, fries and Hellmans ketchup.
+        </p>
+      </li>
+
+      <li>
+        <div class="boxes">
+          <img src="{{data[2].img}}" height="160" width="260" class="images"/></div>
+        <br>
+        <h3 data-key="3" class="textHeader" style="text-align: center;font-size: 20px">{{data[2].headerInfo}}</h3>
+        <p  class="text" data-key="3">{{data[2].price}}lv | {{data[2].weight}} gr</p>
+        <ul class="product-action" style="text-align: center">
+          <a class="link" [routerLink]="['/burger',data[2].headerInfo]"> <button class="button button3" data-key="2">Change</button></a>
+          <button  class="button button1" (click)="buyElement($event)">Buy</button>
+        </ul>
+
+        <p class="display">Black Angus ground beef burger, Gouda cheese,
+          Irish cheddar, bacon, sauteed onions, mushroom mayonnaise, brioche bun, fries and Hellmans ketchup.</p>
+      </li>
+
+      <li>
+        <div class="boxes">
+          <img src="{{data[3].img}}" height="160" width="260" class="images" /></div>
+        <br>
+        <h3 data-key="4" class="textHeader" style="text-align: center;font-size: 20px">{{data[3].headerInfo}}</h3>
+        <p  class="text" data-key="4">{{data[3].price}}lv | {{data[3].weight}} gr</p>
+        <ul class="product-action" style="text-align: center">
+          <a class="link" [routerLink]="['/burger',data[3].headerInfo]"> <button class="button button3" data-key="4">Change</button></a>
+          <button  class="button button1" (click)="buyElement($event)">Buy</button>
+        </ul>
+        <p class="display">Burger made with chopped Spanish Black Angus beef,
+          Cheddar cheese, soy-garlic mayonnaise, sauteed onions, pickles, brioche bun, fries, Hellmans ketchup.
+        </p>
+      </li>
+
+      <li>
+        <div class="boxes">
+          <img src="{{data[4].img}}" height="160" width="260" class="images" /></div>
+        <br>
+        <h3 data-key="5" class="textHeader" style="text-align: center;font-size: 20px">{{data[4].headerInfo}}</h3>
+        <p  class="text" data-key="5">{{data[4].price}}lv | {{data[4].weight}} gr</p>
+        <ul class="product-action" style="text-align: center">
+          <a class="link" [routerLink]="['/burger',data[4].headerInfo]"> <button class="button button3" data-key="4">Change</button></a>
+          <button  class="button button1" (click)="buyElement($event)">Buy</button>
+        </ul>
+        <p class="display">Beef burger, Irish cheddar, pickles, special
+          mayonnaise, BBQ sauce, red onion, brioche bun, fries and Hellmans ketchup.</p>
+      </li>
+
+      <li>
+        <div class="boxes">
+          <img src="{{data[5].img}}" height="160" width="260" class="images" /></div>
+        <br>
+        <h3 data-key="6" class="textHeader" style="text-align: center;font-size: 20px">{{data[5].headerInfo}}</h3>
+        <p  class="text" data-key="6">{{data[5].price}}lv | {{data[5].weight}} gr</p>
+        <ul class="product-action" style="text-align: center">
+          <a class="link" [routerLink]="['/burger',data[5].headerInfo]"> <button class="button button3" data-key="6">Change</button></a>
+          <button  class="button button1" (click)="buyElement($event)">Buy</button>
+        </ul>
+        <p class="display">Black Angus beef burger with mayonnaise, Irish cheddar, soy garlic mayonnaise, caramelized
+          onions, cow butter, brioche bun, fries and Hellmans ketchup.</p>
+      </li>
+
+      <li>
+        <div class="boxes">
+
+          <img src="{{data[6].img}}" height="160" width="260" class="images"/>
+        </div>
+        <br>
+        <h3 data-key="6" class="textHeader" style="text-align: center;font-size: 20px">Vegan burger</h3>
+        <p  class="text" data-key="6">{{data[6].price}}lv | {{data[6].weight}} gr</p>
+        <ul class="product-action" style="text-align: center">
+          <a class="link" [routerLink]="['/burger',data[6].headerInfo]"> <button class="button button3" data-key="6">Change</button></a>
+          <button  class="button button1" (click)="buyElement($event)">Buy</button>
+        </ul>
+        <p class="display">Vegan veggie burger made from peas, beets, onions and spices, with vegan cheddar cheese, vegan mayo, iceberg, tomato, avocado,
+          red onion and vegan bread without butter and eggs, fries and Hellmans ketchup.</p>
+      </li>
+
+
+      <li>
+        <div class="boxes">
+          <img src="{{data[7].img}}" height="160" width="260" class="images"  /></div>
+        <br>
+        <h3 data-key="7" class="textHeader" style="text-align: center;font-size: 20px">{{data[7].headerInfo}}</h3>
+        <p  class="text" data-key="7">{{data[7].price}}lv | {{data[7].weight}}gr</p>
+        <ul class="product-action" style="text-align: center">
+          <a class="link" [routerLink]="['/burger',data[7].headerInfo]"> <button class="button button3" data-key="7">Change</button></a>
+          <button  class="button button1" (click)="buyElement($event)">Buy</button>
+        </ul>
+        <p class="display">Pulled beef with caramelized onions, Irish cheddar, Philadelphia, mushroom mayo, tortilla and fries.</p>
+      </li>
+
+
+      <li>
+        <div class="boxes">
+          <img src="{{data[8].img}}"  height="160" width="260" class="images" /></div>
+        <br>
+        <h3 data-key="8" class="textHeader" style="text-align: center;font-size: 20px">Tortilla with crispy chicken</h3>
+        <p  class="text" data-key="8">{{data[8].price}}lv | {{data[8].weight}} gr</p>
+        <ul class="product-action" style="text-align: center">
+          <a class="link" [routerLink]="['/burger',data[8].headerInfo]"> <button class="button button3" data-key="8">Change</button></a>
+          <button  class="button button1" (click)="buyElement($event)">Buy</button>
+        </ul>
+        <p class="display">Tomato tortilla, crispy chicken, iceberg,
+          fresh pepper, mixed cheddar and cheese, "snack" sauce, "Mexico" sauce, fries and Hellmans ketchup.</p>
+      </li>
+
+      <li>
+        <div class="boxes">
+          <img src="{{data[9].img}}"  height="140" width="240" class="images" /></div>
+        <br>
+        <h3 data-key="9" class="textHeader" style="text-align: center;font-size: 20px">{{data[9].headerInfo}}</h3>
+        <p  class="text" data-key="9">{{data[9].price}}lv | {{data[9].weight}} gr</p>
+        <ul class="product-action" style="text-align: center">
+          <a class="link" [routerLink]="['/burger',data[9].headerInfo]"> <button class="button button3" data-key="9">Change</button></a>
+          <button  class="button button1" (click)="buyElement($event)">Buy</button>
+        </ul>
+        <p class="display">Quesadilla with chicken meat, caramelized onions, Philadelphia, tomato sauce with pepper, cheddar, mozzarella, milk sauce and fries.</p>
+      </li>
+
+
+      <li>
+        <div class="boxes">
+
+          <img src="{{data[10].img}}" height="160" width="260" class="images"/></div>
+        <br>
+        <h3 data-key="10" class="textHeader" style="text-align: center;font-size: 20px">Tortilla with crispy chicken</h3>
+        <p  class="text" data-key="10">{{data[10].price}}lv | {{data[10].weight}} gr</p>
+        <ul class="product-action" style="text-align: center">
+          <a class="link" [routerLink]="['/burger',data[10].headerInfo]"> <button class="button button3" data-key="10">Change</button></a>
+          <button  class="button button1" (click)="buyElement($event)">Buy</button>
+        </ul>
+        <p class="display">With chopped Black Angus beef, Irish cheddar,
+          cheese, black pepper sauce, caramelized onions, tomato sauce, mushroom mayonnaise and fries.</p>
+      </li>
+
+
+    </ul>
+
+  </div>
+</div>
+
+
+
+</body>
+</html>

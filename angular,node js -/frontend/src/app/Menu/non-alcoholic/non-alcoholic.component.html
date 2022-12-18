@@ -1,0 +1,493 @@
+
+<div style="text-align: center">
+
+  <a href="LoggedInSuccessfully/liquids"> <button class="button button2">Back to liquids page</button></a>
+  <a href="LoggedInSuccessfully/liquids/beer"> <button class="button button1">Beer</button>  </a>
+  <a href="LoggedInSuccessfully/liquids/wine">  <button class="button button3">Wine</button> </a>
+  <a href="LoggedInSuccessfully/liquids/whiskey">  <button class="button button4">Whiskey</button>    </a>
+  <a href="LoggedInSuccessfully/liquids/cocktails">  <button class="button button5" >Cocktails</button>  </a>
+
+</div>
+
+
+<p style="text-align: center;font-size: 25px;font-weight: bold">Non-alcoholic liquids!</p>
+
+
+<div class="containerLiquids">
+
+  <div  class="Non-alcoholic">
+    <div class="switcher__item__containers">
+      <div class="boxCheck">
+        <p class="headers">Lemonades</p>
+        <label class="switch">
+          <input type="checkbox">
+          <span class="slider round" (click)="lemonades($event)"></span>
+        </label>
+      </div>
+      &nbsp;
+      &nbsp;
+      &nbsp;
+      <div class="boxCheck">
+        <p class="headers">Energy drink</p>
+        <label class="switch">
+          <input type="checkbox">
+          <span class="slider round" (click)="energy($event)"></span>
+        </label>
+      </div>
+      &nbsp;
+      &nbsp;
+      &nbsp;
+
+      <div class="boxCheck">
+        <p class="headers">Fresh</p>
+        <label class="switch">
+          <input type="checkbox">
+          <span class="slider round" (click)="fresh($event)"></span>
+        </label>
+      </div>
+
+
+      &nbsp;
+      &nbsp;
+      &nbsp;
+
+      <div class="boxCheck">
+        <p class="headers">Water</p>
+        <label class="switch">
+          <input type="checkbox">
+          <span class="slider round" (click)="water($event)"></span>
+        </label>
+      </div>
+
+
+    </div>
+
+    <div class="containerNonAlcoholic">
+
+
+      <div class="box">
+        <div class="product-item-wrapper">
+          <a href="" style="text-align: center">
+
+            <img src="../../../assets/Non-alcoholic/fit_600_376.png" height="175" width="380" class="images"/>
+          </a>
+          <br>
+          <h3 data-key="1" class="textHead">Lemonade with lidar</h3>
+
+          <ul class="price"  style="list-style: none">
+            <li><p class="text" data-key="1" style="font-size: 20px;">3.99 lv | 500 ml</p></li>
+          </ul>
+          <ul class="product-action" >
+            <button class="button9" data-key="1" (click)="change($event)">Change</button>
+
+            <button  class="button10" data-key="1" (click)="buyElement($event)">Buy</button>
+          </ul>
+
+          <div id="none" style="text-align: center" >
+            <p class="text" >Weight | Final price</p>
+            <button data-key="1" class="button9" (click)="minus($event)">-</button>
+            <input data-key="1" class="weight"  type="text"><cite style="font-weight: bold;font-size: 25px">|</cite>
+            <input data-key="1" class="prices"  type="text">
+
+            <button data-key="1"   class="button10" (click)="plus($event)">+</button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="box">
+        <div class="product-item-wrapper">
+          <a href="" style="text-align: center">
+            <img src="../../../assets/Non-alcoholic/fit_600_376 (1).png" height="175" width="380" class="images"/>
+          </a>
+          <br>
+          <h3 data-key="2" class="textHead" >Lemonade</h3>
+
+          <ul class="price"  style="list-style: none">
+            <li><p class="text" data-key="2">4.99 lv | 500 ml</p></li>
+          </ul>
+          <ul class="product-action" >
+            <button class="button9" data-key="2" (click)="change($event)">Change</button>
+
+            <button  class="button10" data-key="2"  (click)="buyElement($event)">Buy</button>
+          </ul>
+
+          <div  style="text-align: center" >
+            <p class="text" >Weight | Final price</p>
+            <button data-key="2" class="button9" (click)="minus($event)">-</button>
+            <input data-key="2" class="weight"  type="text"><cite style="font-weight: bold;font-size: 25px">|</cite>
+            <input data-key="2" class="prices" type="text">
+
+            <button data-key="2"  class="button10" (click)="plus($event)">+</button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="box">
+        <div class="product-item-wrapper">
+          <a href="" style="text-align: center">
+
+            <img src="../../../assets/Non-alcoholic/fit_600_376 (2).png" height="175" width="380" class="images"/>
+          </a>
+          <br>
+          <h3 data-key="3" class="textHead" >Raspberry lemonade</h3>
+
+          <ul class="price"  style="list-style: none">
+            <li><p class="text" data-key="3" style="font-size: 20px;">5.49 lv | 500ml</p></li>
+          </ul>
+          <ul class="product-action" >
+            <button class="button9" data-key="3" (click)="change($event)">Change</button>
+
+            <button  class="button10" data-key="3"  (click)="buyElement($event)">Buy</button>
+          </ul>
+
+          <div  style="text-align: center" >
+            <p class="text" >Weight | Final price</p>
+            <button data-key="3" class="button9"  (click)="minus($event)">-</button>
+            <input data-key="3" class="weight" type="text"><cite style="font-weight: bold;font-size: 25px">|</cite>
+            <input data-key="3" class="prices" type="text">
+
+            <button data-key="3"   class="button10" (click)="plus($event)">+</button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="box" style="height: 480px">
+        <div class="product-item-wrapper">
+          <a href="" style="text-align: center">
+
+            <img src="../../../assets/Non-alcoholic/fit_600_376 (3).png" height="175" width="380" class="images"/>
+          </a>
+          <br>
+          <h3 data-key="4" class="textHead" >Coca Cola</h3>
+          <ul class="price"  style="list-style: none">
+            <li><p class="text" data-key="4" style="font-size: 20px;">1.59 lv | 330 ml</p></li>
+          </ul>
+          <ul class="product-action" >
+            <button class="button9" data-key="4" (click)="change($event)">Change</button>
+
+            <button  class="button10" data-key="4"  (click)="buyElement($event)">Buy</button>
+          </ul>
+
+          <div  style="text-align: center" >
+            <p class="text" style="font-weight: bold">Weight | Final price</p>
+            <button data-key="4" class="button9" (click)="minus($event)">-</button>
+            <input data-key="4" class="weight"  type="text"><cite style="font-weight: bold;font-size: 25px">|</cite>
+            <input data-key="4" class="prices" type="text">
+            <button data-key="4"  class="button10" (click)="plus($event)">+</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="box" style="height: 480px">
+        <div class="product-item-wrapper">
+          <a href="" style="text-align: center">
+
+            <img src="../../../assets/Non-alcoholic/fit_600_376 (4).png" height="175" width="380" class="images"/>
+          </a>
+          <br>
+          <h3 data-key="5" class="textHead" >Coca Cola Zero</h3>
+          <ul class="price"  style="list-style: none">
+            <li><p class="text" data-key="5" >1.59 lv | 330 ml</p></li>
+          </ul>
+          <ul class="product-action" >
+            <button class="button9" data-key="5" (click)="change($event)">Change</button>
+
+            <button  class="button10" data-key="5"  (click)="buyElement($event)">Buy</button>
+          </ul>
+
+          <div  style="text-align: center" >
+            <p class="text" >Weight | Final price</p>
+            <button data-key="5" class="button9"  (click)="minus($event)">-</button>
+            <input data-key="5" class="weight"  type="text"><cite style="font-weight: bold;font-size: 25px">|</cite>
+            <input data-key="5" class="prices"  type="text">
+            <button data-key="5"  class="button10" (click)="plus($event)">+</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="box" style="height: 480px">
+        <div class="product-item-wrapper">
+          <a href="" style="text-align: center">
+
+            <img src="../../../assets/Non-alcoholic/fit_600_376 (5).png" height="175" width="380" class="images"/>
+          </a>
+          <br>
+          <h3 data-key="6" class="textHead">Tonic</h3>
+          <ul class="price"  style="list-style: none">
+            <li><p class="text" data-key="6" style="font-size: 20px;">1.59 lv | 330 ml</p></li>
+          </ul>
+          <ul class="product-action" >
+            <button class="button9" data-key="6" (click)="change($event)">Change</button>
+
+            <button  class="button10" data-key="6"  (click)="buyElement($event)">Buy</button>
+          </ul>
+
+          <div  style="text-align: center" >
+            <p class="text" >Weight | Final price</p>
+            <button data-key="6" class="button9" (click)="minus($event)">-</button>
+            <input data-key="6" class="weight"  type="text"><cite style="font-weight: bold;font-size: 25px">|</cite>
+            <input data-key="6" class="prices" type="text">
+            <button data-key="6"   class="button10" (click)="plus($event)">+</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="box" style="height: 480px">
+        <div class="product-item-wrapper">
+          <a href="" style="text-align: center">
+
+            <img src="../../../assets/Non-alcoholic/fit_600_376 (6).png"  height="175" width="380" class="images"/>
+          </a>
+          <br>
+          <h3 data-key="7" class="text" style="text-align: center;">Fanta</h3>
+          <ul class="price"  style="list-style: none">
+            <li><p class="text" data-key="7" style="font-size: 20px;">1.59 lv | 330 ml</p></li>
+          </ul>
+          <ul class="product-action" >
+            <button class="button9" data-key="7" (click)="change($event)">Change</button>
+
+            <button  class="button10" data-key="7"  (click)="buyElement($event)">Buy</button>
+          </ul>
+
+          <div  style="text-align: center" >
+            <p class="text" style="font-weight: bold">Weight | Final price</p>
+            <button data-key="7" class="button9" style="width: 50px;font-size: 20px;text-align: center" (click)="minus($event)">-</button>
+            <input data-key="7" class="weight" style=" border:none;font-size: 20px;width: 60px;height: 30px;background-color: white" type="text"><cite style="font-weight: bold;font-size: 25px">|</cite>
+            <input data-key="7" class="prices" style="border:none;font-size: 20px;width: 60px;height: 30px;background-color: white" type="text">
+            <button data-key="7" style="width: 50px;font-size: 20px;text-align: center"  class="button10" (click)="plus($event)">+</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="box" style="height: 480px">
+        <div class="product-item-wrapper">
+          <a href="" style="text-align: center">
+
+            <img src="../../../assets/Non-alcoholic/fit_600_376 (7).png" height="175" width="380" class="images"/>
+          </a>
+          <br>
+          <h3 data-key="8" class="textHead" >Sprite</h3>
+          <ul class="price"  style="list-style: none">
+            <li><p class="text" data-key="8" style="font-size: 20px;">1.59 lv | 330 ml</p></li>
+          </ul>
+          <ul class="product-action" >
+            <button class="button9" data-key="8" (click)="change($event)">Change</button>
+
+            <button  class="button10" data-key="8"  (click)="buyElement($event)">Buy</button>
+          </ul>
+
+          <div  style="text-align: center" >
+            <p class="text" >Weight | Final price</p>
+            <button data-key="8" class="button9" (click)="minus($event)">-</button>
+            <input data-key="8" class="weight"  type="text"><cite style="font-weight: bold;font-size: 25px">|</cite>
+            <input data-key="8" class="prices"  type="text">
+            <button data-key="8"   class="button10" (click)="plus($event)">+</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="box" style="height: 480px">
+        <div class="product-item-wrapper">
+          <a href="" style="text-align: center">
+
+            <img src="../../../assets/Non-alcoholic/fit_600_376 (8).png" height="175" width="380" class="images"/>
+          </a>
+          <br>
+          <h3 data-key="9" class="textHead" >Fresh with oranges</h3>
+          <ul class="price"  style="list-style: none">
+            <li><p class="text" data-key="9">3.59 lv | 250 ml</p></li>
+          </ul>
+          <ul class="product-action" >
+            <button class="button9" data-key="9" (click)="change($event)">Change</button>
+
+            <button  class="button10" data-key="9"  (click)="buyElement($event)">Buy</button>
+          </ul>
+
+          <div  style="text-align: center" >
+            <p class="text">Weight | Final price</p>
+            <button data-key="9" class="button9"  (click)="minus($event)">-</button>
+            <input data-key="9" class="weight"  type="text"><cite style="font-weight: bold;font-size: 25px">|</cite>
+            <input data-key="9" class="prices"  type="text">
+            <button data-key="9"  class="button10" (click)="plus($event)">+</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="box" style="height: 480px">
+        <div class="product-item-wrapper">
+          <a href="" style="text-align: center">
+
+            <img src="../../../assets/Non-alcoholic/fit_600_376 (9).png" height="175" width="380" class="images"/>
+          </a>
+          <br>
+          <h3 data-key="10" class="textHead" >Fresh with  grapefruits</h3>
+          <ul class="price"  style="list-style: none">
+            <li><p class="text" data-key="10" style="font-size: 20px;">3.59 lv | 250 ml</p></li>
+          </ul>
+          <ul class="product-action" >
+            <button class="button9" data-key="10" (click)="change($event)">Change</button>
+
+            <button  class="button10" data-key="10"  (click)="buyElement($event)">Buy</button>
+          </ul>
+
+          <div  style="text-align: center" >
+            <p class="text">Weight | Final price</p>
+            <button data-key="10" class="button9"  (click)="minus($event)">-</button>
+            <input data-key="10" class="weight"  type="text"><cite style="font-weight: bold;font-size: 25px">|</cite>
+            <input data-key="10" class="prices"  type="text">
+            <button data-key="10"   class="button10" (click)="plus($event)">+</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="box" style="height: 480px">
+        <div class="product-item-wrapper">
+          <a href="" style="text-align: center">
+
+            <img src="../../../assets/Non-alcoholic/fit_600_376 (10).png" height="175" width="380" class="images"/>
+          </a>
+          <br>
+          <h3 data-key="11" class="textHead" >Fresh with  grapefruits and oranges</h3>
+          <ul class="price"  style="list-style: none">
+            <li><p class="text" data-key="11">3.89 lv | 250 ml</p></li>
+          </ul>
+          <ul class="product-action" >
+            <button class="button9" data-key="11" (click)="change($event)">Change</button>
+
+            <button  class="button10" data-key="11"  (click)="buyElement($event)">Buy</button>
+          </ul>
+          <div  style="text-align: center" >
+            <p class="text">Weight | Final price</p>
+            <button data-key="11" class="button9"  (click)="minus($event)">-</button>
+            <input data-key="11" class="weight"  type="text"><cite style="font-weight: bold;font-size: 25px">|</cite>
+            <input data-key="11" class="prices"  type="text">
+            <button data-key="11"  class="button10" (click)="plus($event)">+</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="box" style="height: 480px">
+        <div class="product-item-wrapper">
+          <a href="" style="text-align: center">
+
+            <img src="../../../assets/Non-alcoholic/fit_600_376 (11).png" height="175" width="380" class="images"/>
+          </a>
+          <br>
+          <h3 data-key="12" class="textHead" >Мineral water upper bath</h3>
+          <ul class="price"  style="list-style: none">
+            <li><p class="text" data-key="12">1.89 lv | 500 ml</p></li>
+          </ul>
+          <ul class="product-action" >
+            <button class="button9" data-key="12" (click)="change($event)">Change</button>
+
+            <button  class="button10" data-key="12"  (click)="buyElement($event)">Buy</button>
+          </ul>
+
+          <div  style="text-align: center" >
+            <p class="text">Weight | Final price</p>
+            <button data-key="12" class="button9"  (click)="minus($event)">-</button>
+            <input data-key="12" class="weight"  type="text"><cite style="font-weight: bold;font-size: 25px">|</cite>
+            <input data-key="12" class="prices"  type="text">
+            <button data-key="12" class="button10" (click)="plus($event)">+</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="box" style="height: 480px">
+        <div class="product-item-wrapper">
+          <a href="" style="text-align: center">
+
+            <img src="../../../assets/Non-alcoholic/fit_600_376 (12).png" height="175" width="380" class="images"/>
+          </a>
+          <br>
+          <h3 data-key="13" class="textHead" >Aqua pana mineral water</h3>
+          <ul class="price"  style="list-style: none">
+            <li><p class="text" data-key="13">1.49 lv | 500 ml</p></li>
+          </ul>
+          <ul class="product-action" >
+            <button class="button9" data-key="13" (click)="change($event)">Change</button>
+
+            <button  class="button10" data-key="13"  (click)="buyElement($event)">Buy</button>
+          </ul>
+
+          <div  style="text-align: center" >
+            <p class="text" >Weight | Final price</p>
+            <button data-key="13" class="button9"  (click)="minus($event)">-</button>
+            <input data-key="13" class="weight"  type="text"><cite style="font-weight: bold;font-size: 25px">|</cite>
+            <input data-key="13" class="prices"  type="text">
+            <button data-key="13"  class="button10" (click)="plus($event)">+</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="box" style="height: 480px">
+        <div class="product-item-wrapper">
+          <a href="" style="text-align: center">
+            <img src="../../../assets/Non-alcoholic/fit_600_376fds.png" height="175" width="380" class="images"/>
+          </a>
+          <br>
+          <h3 data-key="14" class="text">Mineral water Perie</h3>
+          <ul class="price"  style="list-style: none">
+            <li><p class="text" data-key="14" >2.49 lv | 500 ml</p></li>
+          </ul>
+          <ul class="product-action" >
+            <button class="button9" data-key="14" (click)="change($event)">Change</button>
+
+            <button  class="button10" data-key="14"  (click)="buyElement($event)">Buy</button>
+          </ul>
+
+          <div  style="text-align: center" >
+            <p class="text" >Weight | Final price</p>
+            <button data-key="14" class="button9" (click)="minus($event)">-</button>
+            <input data-key="14" class="weight"  type="text"><cite style="font-weight: bold;font-size: 25px">|</cite>
+            <input data-key="14" class="prices" type="text">
+            <button data-key="14"   class="button10" (click)="plus($event)">+</button>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="box" style="height: 480px">
+        <div class="product-item-wrapper">
+          <a href="" style="text-align: center">
+            <img src="../../../assets/Non-alcoholic/fit_600_376dsfvxc.png" height="175" width="380" class="images"/>
+          </a>
+          <br>
+          <h3 data-key="15" class="textHead" >Red Bull</h3>
+          <ul class="price"  style="list-style: none">
+            <li><p class="text" data-key="15" >3.29 lv | 250 ml</p></li>
+          </ul>
+          <ul class="product-action" >
+            <button class="button9" data-key="15" (click)="change($event)">Change</button>
+
+            <button  class="button10" data-key="15" (click)="buyElement($event)">Buy</button>
+          </ul>
+
+          <div  style="text-align: center" >
+            <p class="text" >Weight | Final price</p>
+            <button data-key="15" class="button9"  (click)="minus($event)">-</button>
+            <input data-key="15" class="weight" type="text"><cite style="font-weight: bold;font-size: 25px">|</cite>
+            <input data-key="15" class="prices"  type="text">
+
+            <button data-key="15" class="button10" (click)="plus($event)">+</button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</div>
+

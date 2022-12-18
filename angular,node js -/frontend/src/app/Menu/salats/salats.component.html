@@ -1,0 +1,661 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Page Title</title>
+</head>
+<body>
+
+
+
+
+<div class="switcher__item__containers">
+  <div class="boxCheck">
+    <p>Without Chicken</p>
+    <label class="switch">
+      <input type="checkbox" (click)="withoutChicken($event)">
+      <span class="slider round"></span>
+    </label>
+  </div>
+  &nbsp;
+  &nbsp;
+  &nbsp;
+  <div class="boxCheck">
+    <p style="text-align: center">Without Fish</p>
+    <label class="switch">
+      <input type="checkbox" (click)="withOutFish($event)">
+      <span class="slider round"></span>
+    </label>
+  </div>
+  &nbsp;
+  &nbsp;
+  &nbsp;
+
+  <div class="boxCheck">
+    <p style="text-align: center">New salads</p>
+    <label class="switch">
+      <input type="checkbox">
+      <span class="slider round" (click)="newSalads($event)"></span>
+    </label>
+  </div>
+
+
+
+</div>
+
+
+<div class="ifNot"  *ngIf="urlStatement!=='LoggedInSuccessfully'" >
+  <div class="container" >
+
+
+    <div class="box">
+      <div class="product-item-wrapper">
+        <a [routerLink]="['/menuSalads',information[0].headerInfo]">
+          <img src="../../../assets/salats/fit_600_376.png"  height="175" width="380" class="images"/></a>
+        <h3 data-key="1" class="text" style="text-align: center;">Rigoletto salad</h3>
+        <ul class="price">
+          <li><p class="text" data-key="1" style="font-size: 18px;">9.99 lv | 350  gr</p></li>
+
+        </ul>
+
+        <ul class="product-action">
+          <a class="link" [routerLink]="['/menuSalads',information[0].headerInfo]"> <button class="button button3" data-key="1">Change</button></a>
+          <button  class="button button1" data-key="1" (click)="buyElement($event)">Buy</button>
+        </ul>
+
+        <p class="display">Tuna, tomatoes, cucumbers, egg, green salad mix, olives, Feta sauce.</p>
+
+      </div>
+
+    </div>
+
+    <div class="box">
+      <div class="product-item-wrapper">
+        <a [routerLink]="['/menuSalads',information[1].headerInfo]">
+          <img src="../../../assets/salats/fit_600_376 (1).png" height="175" width="380" class="images" />
+        </a>
+        <h3 data-key="2" class="text" style="text-align: center;">Cob salad</h3>
+        <ul class="price">
+          <li><p  class="text" data-key="2" style="">13.49 lv |  430 gr</p></li>
+        </ul>
+        <ul class="product-action">
+
+          <a class="link" [routerLink]="['/menuSalads',information[1].headerInfo]"> <button class="button button3" data-key="2">Change</button></a>
+
+          <button  class="button button1" data-key="2" (click)="buyElement($event)">Buy</button>
+
+        </ul>
+        <p class="display">With grilled chicken fillets, avocado,
+          bacon, parmesan, egg, mixed green salads, tomatoes, red onion and feta sauce.</p>
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="product-item-wrapper">
+        <a [routerLink]="['/menuSalads',information[2].headerInfo]">
+          <img src="../../../assets/salats/fit_600_376 (2).png" height="175" width="380" class="images"/>
+        </a>
+        <h3 data-key="3" class="text" style="text-align: center;">Fitnes</h3>
+        <ul class="price">
+          <li><p class="text" data-key="3" style="font-size: 18px;">9.69 lv | 390 gr</p></li>
+        </ul>
+        <ul class="product-action">
+
+          <a class="link" [routerLink]="['/menuSalads',information[2].headerInfo]"> <button class="button button3" data-key="3">Change</button></a>
+
+          <button  class="button button1" data-key="3" (click)="buyElement($event)">Buy</button>
+        </ul>
+        <p class="display">Spinach, carrots, beets, cucumbers,
+          cauliflower, Philadelphia mousse with dill, pumpkin seeds, sesame seeds, dressing.</p>
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="product-item-wrapper">
+        <a [routerLink]="['/menuSalads',information[3].headerInfo]">
+          <img src="../../../assets/salats/fit_600_376 (3).png" height="175" width="380" class="images"/>
+        </a>
+        <h3 data-key="4" class="text" style="text-align: center;">The avocado storm</h3>
+        <ul class="price">
+          <li><p  class="text" data-key="4" style="">14.69 lv |  380  gr</p></li>
+        </ul>
+        <ul class="product-action">
+
+          <a class="link" [routerLink]="['/menuSalads',information[3].headerInfo]"> <button class="button button3" data-key="4">Change</button></a>
+
+          <button  class="button button1" data-key="4" (click)="buyElement($event)">Buy</button>
+
+        </ul>
+        <p class="display">Burrata, tomatoes, avocado, arugula, Pesto, balsamic reduction.</p>
+
+      </div>
+    </div>
+
+
+    <div class="box">
+      <div class="product-item-wrapper">
+        <a [routerLink]="['/menuSalads',information[4].headerInfo]">
+          <img src="../../../assets/salats/fit_600_376 (4).png"  height="175" width="380" class="images"/>
+
+        </a>
+        <h3 data-key="5" class="text" style="text-align: center;">Golden autumn</h3>
+        <ul class="price">
+          <li><p class="text" data-key="5" style="font-size: 18px;">8.99 lv | 350 gr</p></li>
+
+        </ul>
+
+        <ul class="product-action">
+          <a class="link" [routerLink]="['/menuSalads',information[4].headerInfo]"> <button class="button button3" data-key="5">Change</button></a>
+
+          <button  class="button button1" data-key="5" (click)="buyElement($event)">Buy</button>
+        </ul>
+
+        <p class="display">Spinach, quinoa, roasted pumpkin,
+          pomegranate, grapes, caramelized walnuts, truffle balsamic vinaigrette, sesame.</p>
+
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="product-item-wrapper">
+        <a [routerLink]="['/menuSalads',information[5].headerInfo]">
+          <img src="../../../assets/salats/fit_600_376 (5).png" height="175" width="380" class="images" /></a>
+        <h3 data-key="6" class="text" style="text-align: center;">Corsica salad</h3>
+        <ul class="price">
+          <li><p  class="text" data-key="6" style="">9.99 lv | 390 gr</p></li>
+        </ul>
+        <ul class="product-action">
+          <a class="link" [routerLink]="['/menuSalads',information[5].headerInfo]"> <button class="button button3" data-key="6">Change</button></a>
+
+          <button  class="button button1" data-key="6" (click)="buyElement($event)">Buy</button>
+        </ul>
+        <p class="display">Hummus, chickpeas, tomatoes, avocados, cucumbers, olives, red and green onions, parsley, olive oil.</p>
+      </div>
+    </div>
+
+
+    <div class="box">
+      <div class="product-item-wrapper">
+        <a [routerLink]="['/menuSalads',information[6].headerInfo]">
+          <img src="../../../assets/salats/fit_600_376 (6).png" height="175" width="380" class="images"/></a>
+        <h3 data-key="7" class="text" style="text-align: center;">Grapes and cheese</h3>
+        <ul class="price">
+          <li><p class="text" data-key="7" style="font-size: 18px;">10.49 lv | 290 gr</p></li>
+
+        </ul>
+
+        <ul class="product-action">
+          <a class="link" [routerLink]="['/menuSalads',information[6].headerInfo]"> <button class="button button3" data-key="1">Change</button></a>
+          <button  class="button button1" data-key="7" (click)="buyElement($event)">Buy</button>
+        </ul>
+        <p class="display">White grapes, green salad mix with arugula,
+          Irish cheddar, Gauda, blue cheese, dried apricots, caramelized walnuts, aromatic dressing.</p>
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="product-item-wrapper">
+        <a [routerLink]="['/menuSalads',information[7].headerInfo]">
+          <img src="../../../assets/salats/fit_600_376 (7).png" height="175" width="380" class="images"/>
+
+        </a>
+        <h3 data-key="8" class="text" style="text-align: center;">Salad with quinoa and white fish</h3>
+        <ul class="price">
+          <li><p  class="text" data-key="8" style="">12.99 lv |  470 gr</p></li>
+        </ul>
+        <ul class="product-action">
+          <a class="link" [routerLink]="['/menuSalads',information[7].headerInfo]"> <button class="button button3" data-key="1">Change</button></a>
+          <button  class="button button1" data-key="8" (click)="buyElement($event)">Buy</button>
+        </ul>
+        <p class="display">Quinoa, white fish, mixed
+          green salad, tomatoes, egg, roasted pepper, white cheese, croutons and soy-mustard dressing.</p>
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="product-item-wrapper">
+        <a [routerLink]="['/menuSalads',information[8].headerInfo]">
+          <img src="../../../assets/salats/fit_600_376 (8).png" height="175" width="380" class="images"/>
+        </a>
+        <h3 data-key="9" class="text" style="text-align: center;">Crispy Chicken caeser</h3>
+        <ul class="price">
+          <li><p  class="text" data-key="9" style="">13.69 lv |  290 gr</p></li>
+        </ul>
+        <ul class="product-action">
+          <a class="link" [routerLink]="['/menuSalads',information[8].headerInfo]"> <button class="button button3" data-key="1">Change</button></a>
+
+          <button  class="button button1" data-key="9" (click)="buyElement($event)">Buy</button>
+        </ul>
+        <p class="display">Crispy chicken fillet, mixed green salad, crispy bacon, parmesan, croutons, Caesar sauce.</p>
+      </div>
+    </div>
+
+
+    <div class="box">
+      <div class="product-item-wrapper">
+        <a [routerLink]="['/menuSalads',information[9].headerInfo]">
+          <img src="../../../assets/salats/fit_600_376 (9).png" height="175" width="380" class="images"/>
+        </a>
+        <h3 data-key="10" class="text" style="text-align: center;">Spinach with quinoa</h3>
+        <ul class="price">
+          <li><p class="text" data-key="10" style="font-size: 18px;">11.19 lv | 400 gr</p></li>
+
+        </ul>
+
+        <ul class="product-action">
+          <a class="link" [routerLink]="['/menuSalads',information[9].headerInfo]"> <button class="button button3" data-key="1">Change</button></a>
+          <button  class="button button1" data-key="10" (click)="buyElement($event)">Buy</button>
+        </ul>
+        <p class="display">Quinoa, spinach, tomatoes, roasted pepper, egg, white cheese, soy-mustard dressing.</p>
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="product-item-wrapper">
+        <a [routerLink]="['/menuSalads',information[10].headerInfo]">
+          <img src="../../../assets/salats/fit_600_376 (10).png"  height="175" width="380" class="images"/>
+
+        </a>
+        <h3 data-key="11" class="text" style="text-align: center;">Salad luxury</h3>
+        <ul class="price">
+          <li><p  class="text" data-key="11" style="">12.29 lv |  370 gr</p></li>
+        </ul>
+        <ul class="product-action">
+
+          <a class="link" [routerLink]="['/menuSalads',information[10].headerInfo]"> <button class="button button3" data-key="1">Change</button></a>
+
+          <button  class="button button1" data-key="11" (click)="buyElement($event)">Buy</button>
+        </ul>
+        <p class="display"> 2pcs. of BBQ tender chicken loins, avocado, mixed green salad, tomatoes, egg, special dressing soy mustard.</p>
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="product-item-wrapper">
+        <a [routerLink]="['/menuSalads',information[11].headerInfo]">
+          <img src="../../../assets/salats/fit_600_376 (11).png" height="175" width="380" class="images"/>
+        </a>
+        <h3 data-key="12" class="text" style="text-align: center;">Crispy squid caesar</h3>
+        <ul class="price">
+          <li><p  class="text" data-key="12" style="">13.79 lv |  290 gr</p></li>
+        </ul>
+        <ul class="product-action">
+          <a class="link" [routerLink]="['/menuSalads',information[11].headerInfo]"> <button class="button button3" data-key="11">Change</button></a>
+
+          <button  class="button button1" data-key="12" (click)="buyElement($event)">Buy</button>
+        </ul>
+        <p class="display">Mixed green salad, roasted bacon, crispy squid, croutons, parmesan, Caesar sauce.</p>
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="product-item-wrapper">
+        <a [routerLink]="['/menuSalads',information[12].headerInfo]">
+          <img src="../../../assets/salats/fit_600_376 (12).png" height="175" width="380" class="images"/></a>
+        <h3 data-key="13" class="text" style="text-align: center;">Shopska salad</h3>
+        <ul class="price">
+          <li><p class="text" data-key="13" style="font-size: 18px;">8.69 lv | 390 gr</p></li>
+        </ul>
+        <ul class="product-action">
+          <a class="link" [routerLink]="['/menuSalads',information[12].headerInfo]"> <button class="button button3" data-key="1">Change</button></a>
+
+          <button  class="button button1" data-key="13" (click)="buyElement($event)">Buy</button>
+        </ul>
+        <p class="display">Tomatoes, cucumbers, cheese, onions, parsley, olive oil.</p>
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="product-item-wrapper">
+        <a [routerLink]="['/menuSalads',information[13].headerInfo]">
+          <img src="../../../assets/salats/fit_600_376 (13).png" height="175" width="380" class="images"/>
+
+        </a>
+        <h3 data-key="14" class="text" style="text-align: center;">Greek salad</h3>
+        <ul class="price">
+          <li><p  class="text" data-key="14" style="">8.29 lv |  370 gr</p></li>
+        </ul>
+        <ul class="product-action">
+          <a class="link" [routerLink]="['/menuSalads',information[13].headerInfo]"> <button class="button button3" data-key="1">Change</button></a>
+
+          <button  class="button button1" data-key="14" (click)="buyElement($event)">Buy</button>
+        </ul>
+        <p class="display">Tomatoes, cucumbers, fresh peppers, withe cheese, red onions, olives, aromatic olive oil and oregano, parsley and black pepper.</p>
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="product-item-wrapper">
+        <a [routerLink]="['/menuSalads',information[14].headerInfo]">
+          <img src="../../../assets/salats/fit_600_376 (14).png" height="175" width="380" class="images"/>
+        </a>
+        <h3 data-key="15" class="text" style="text-align: center;">Wakame</h3>
+        <ul class="price">
+          <li><p  class="text" data-key="15" style="">6.79 lv |  140 gr</p></li>
+        </ul>
+        <ul class="product-action">
+
+          <a class="link" [routerLink]="['/menuSalads',information[14].headerInfo]"> <button class="button button3" data-key="1">Change</button></a>
+
+          <button  class="button button1" data-key="15" (click)="buyElement($event)">Buy</button>
+        </ul>
+        <p class="display">Crispy Seaweed with sesame.</p>
+      </div>
+    </div>
+
+
+
+  </div>
+</div>
+
+
+<div class="if"   *ngIf="urlStatement==='LoggedInSuccessfully'">
+
+  <div class="container" >
+
+
+    <div class="box">
+      <div class="product-item-wrapper">
+        <a [routerLink]="['LoggedInSuccessfully/menuSalads',information[0].headerInfo]">
+          <img src="../../../assets/salats/fit_600_376.png"  height="175" width="380" class="images"/></a>
+        <h3 data-key="1" class="text" style="text-align: center;">Rigoletto salad</h3>
+        <ul class="price">
+          <li><p class="text" data-key="1" style="font-size: 18px;">9.99 lv | 350  gr</p></li>
+
+        </ul>
+
+        <ul class="product-action">
+          <a class="link" [routerLink]="['LoggedInSuccessfully/menuSalads',information[0].headerInfo]"> <button class="button button3" data-key="1">Change</button></a>
+          <button  class="button button1" data-key="1" (click)="buyElement($event)">Buy</button>
+        </ul>
+
+        <p class="display">Tuna, tomatoes, cucumbers, egg, green salad mix, olives, Feta sauce.</p>
+
+      </div>
+
+    </div>
+
+    <div class="box">
+      <div class="product-item-wrapper">
+        <a [routerLink]="['LoggedInSuccessfully/menuSalads',information[1].headerInfo]">
+          <img src="../../../assets/salats/fit_600_376 (1).png" height="175" width="380" class="images" />
+        </a>
+        <h3 data-key="2" class="text" style="text-align: center;">Cob salad</h3>
+        <ul class="price">
+          <li><p  class="text" data-key="2" style="">13.49 lv |  430 gr</p></li>
+        </ul>
+        <ul class="product-action">
+
+          <a class="link" [routerLink]="['LoggedInSuccessfully/menuSalads',information[1].headerInfo]"> <button class="button button3" data-key="2">Change</button></a>
+
+          <button  class="button button1" data-key="2" (click)="buyElement($event)">Buy</button>
+
+        </ul>
+        <p class="display">With grilled chicken fillets, avocado,
+          bacon, parmesan, egg, mixed green salads, tomatoes, red onion and feta sauce.</p>
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="product-item-wrapper">
+        <a [routerLink]="['LoggedInSuccessfully/menuSalads',information[2].headerInfo]">
+          <img src="../../../assets/salats/fit_600_376 (2).png" height="175" width="380" class="images"/>
+        </a>
+        <h3 data-key="3" class="text" style="text-align: center;">Fitnes</h3>
+        <ul class="price">
+          <li><p class="text" data-key="3" style="font-size: 18px;">9.69 lv | 390 gr</p></li>
+        </ul>
+        <ul class="product-action">
+
+          <a class="link" [routerLink]="['LoggedInSuccessfully/menuSalads',information[2].headerInfo]"> <button class="button button3" data-key="3">Change</button></a>
+
+          <button  class="button button1" data-key="3" (click)="buyElement($event)">Buy</button>
+        </ul>
+        <p class="display">Spinach, carrots, beets, cucumbers,
+          cauliflower, Philadelphia mousse with dill, pumpkin seeds, sesame seeds, dressing.</p>
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="product-item-wrapper">
+        <a [routerLink]="['LoggedInSuccessfully/menuSalads',information[3].headerInfo]">
+          <img src="../../../assets/salats/fit_600_376 (3).png" height="175" width="380" class="images"/>
+        </a>
+        <h3 data-key="4" class="text" style="text-align: center;">The avocado storm</h3>
+        <ul class="price">
+          <li><p  class="text" data-key="4" style="">14.69 lv |  380  gr</p></li>
+        </ul>
+        <ul class="product-action">
+
+          <a class="link" [routerLink]="['LoggedInSuccessfully/menuSalads',information[3].headerInfo]"> <button class="button button3" data-key="4">Change</button></a>
+
+          <button  class="button button1" data-key="4" (click)="buyElement($event)">Buy</button>
+
+        </ul>
+        <p class="display">Burrata, tomatoes, avocado, arugula, Pesto, balsamic reduction.</p>
+
+      </div>
+    </div>
+
+
+    <div class="box">
+      <div class="product-item-wrapper">
+        <a [routerLink]="['LoggedInSuccessfully/menuSalads',information[4].headerInfo]">
+          <img src="../../../assets/salats/fit_600_376 (4).png"  height="175" width="380" class="images"/>
+
+        </a>
+        <h3 data-key="5" class="text" style="text-align: center;">Golden autumn</h3>
+        <ul class="price">
+          <li><p class="text" data-key="5" style="font-size: 18px;">8.99 lv | 350 gr</p></li>
+
+        </ul>
+
+        <ul class="product-action">
+          <a class="link" [routerLink]="['LoggedInSuccessfully/menuSalads',information[4].headerInfo]"> <button class="button button3" data-key="5">Change</button></a>
+
+          <button  class="button button1" data-key="5" (click)="buyElement($event)">Buy</button>
+        </ul>
+
+        <p class="display">Spinach, quinoa, roasted pumpkin,
+          pomegranate, grapes, caramelized walnuts, truffle balsamic vinaigrette, sesame.</p>
+
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="product-item-wrapper">
+        <a [routerLink]="['LoggedInSuccessfully/menuSalads',information[5].headerInfo]">
+          <img src="../../../assets/salats/fit_600_376 (5).png" height="175" width="380" class="images" /></a>
+        <h3 data-key="6" class="text" style="text-align: center;">Corsica salad</h3>
+        <ul class="price">
+          <li><p  class="text" data-key="6" style="">9.99 lv | 390 gr</p></li>
+        </ul>
+        <ul class="product-action">
+          <a class="link" [routerLink]="['LoggedInSuccessfully/menuSalads',information[5].headerInfo]"> <button class="button button3" data-key="6">Change</button></a>
+
+          <button  class="button button1" data-key="6" (click)="buyElement($event)">Buy</button>
+        </ul>
+        <p class="display">Hummus, chickpeas, tomatoes, avocados, cucumbers, olives, red and green onions, parsley, olive oil.</p>
+      </div>
+    </div>
+
+
+    <div class="box">
+      <div class="product-item-wrapper">
+        <a [routerLink]="['LoggedInSuccessfully/menuSalads',information[6].headerInfo]">
+          <img src="../../../assets/salats/fit_600_376 (6).png" height="175" width="380" class="images"/></a>
+        <h3 data-key="7" class="text" style="text-align: center;">Grapes and cheese</h3>
+        <ul class="price">
+          <li><p class="text" data-key="7" style="font-size: 18px;">10.49 lv | 290 gr</p></li>
+
+        </ul>
+
+        <ul class="product-action">
+          <a class="link" [routerLink]="['LoggedInSuccessfully/menuSalads',information[6].headerInfo]"> <button class="button button3" data-key="1">Change</button></a>
+          <button  class="button button1" data-key="7" (click)="buyElement($event)">Buy</button>
+        </ul>
+        <p class="display">White grapes, green salad mix with arugula,
+          Irish cheddar, Gauda, blue cheese, dried apricots, caramelized walnuts, aromatic dressing.</p>
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="product-item-wrapper">
+        <a [routerLink]="['LoggedInSuccessfully/menuSalads',information[7].headerInfo]">
+          <img src="../../../assets/salats/fit_600_376 (7).png" height="175" width="380" class="images"/>
+
+        </a>
+        <h3 data-key="8" class="text" style="text-align: center;">Salad with quinoa and white fish</h3>
+        <ul class="price">
+          <li><p  class="text" data-key="8" style="">12.99 lv |  470 gr</p></li>
+        </ul>
+        <ul class="product-action">
+          <a class="link" [routerLink]="['LoggedInSuccessfully/menuSalads',information[7].headerInfo]"> <button class="button button3" data-key="1">Change</button></a>
+          <button  class="button button1" data-key="8" (click)="buyElement($event)">Buy</button>
+        </ul>
+        <p class="display">Quinoa, white fish, mixed
+          green salad, tomatoes, egg, roasted pepper, white cheese, croutons and soy-mustard dressing.</p>
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="product-item-wrapper">
+        <a [routerLink]="['LoggedInSuccessfully/menuSalads',information[8].headerInfo]">
+          <img src="../../../assets/salats/fit_600_376 (8).png" height="175" width="380" class="images"/>
+        </a>
+        <h3 data-key="9" class="text" style="text-align: center;">Crispy Chicken caeser</h3>
+        <ul class="price">
+          <li><p  class="text" data-key="9" style="">13.69 lv |  290 gr</p></li>
+        </ul>
+        <ul class="product-action">
+          <a class="link" [routerLink]="['LoggedInSuccessfully/menuSalads',information[8].headerInfo]"> <button class="button button3" data-key="1">Change</button></a>
+
+          <button  class="button button1" data-key="9" (click)="buyElement($event)">Buy</button>
+        </ul>
+        <p class="display">Crispy chicken fillet, mixed green salad, crispy bacon, parmesan, croutons, Caesar sauce.</p>
+      </div>
+    </div>
+
+
+    <div class="box">
+      <div class="product-item-wrapper">
+        <a [routerLink]="['LoggedInSuccessfully/menuSalads',information[9].headerInfo]">
+          <img src="../../../assets/salats/fit_600_376 (9).png" height="175" width="380" class="images"/>
+        </a>
+        <h3 data-key="10" class="text" style="text-align: center;">Spinach with quinoa</h3>
+        <ul class="price">
+          <li><p class="text" data-key="10" style="font-size: 18px;">11.19 lv | 400 gr</p></li>
+
+        </ul>
+
+        <ul class="product-action">
+          <a class="link" [routerLink]="['LoggedInSuccessfully/menuSalads',information[9].headerInfo]"> <button class="button button3" data-key="1">Change</button></a>
+          <button  class="button button1" data-key="10" (click)="buyElement($event)">Buy</button>
+        </ul>
+        <p class="display">Quinoa, spinach, tomatoes, roasted pepper, egg, white cheese, soy-mustard dressing.</p>
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="product-item-wrapper">
+        <a [routerLink]="['LoggedInSuccessfully/menuSalads',information[10].headerInfo]">
+          <img src="../../../assets/salats/fit_600_376 (10).png"  height="175" width="380" class="images"/>
+
+        </a>
+        <h3 data-key="11" class="text" style="text-align: center;">Salad luxury</h3>
+        <ul class="price">
+          <li><p  class="text" data-key="11" style="">12.29 lv |  370 gr</p></li>
+        </ul>
+        <ul class="product-action">
+
+          <a class="link" [routerLink]="['LoggedInSuccessfully/menuSalads',information[10].headerInfo]"> <button class="button button3" data-key="1">Change</button></a>
+
+          <button  class="button button1" data-key="11" (click)="buyElement($event)">Buy</button>
+        </ul>
+        <p class="display"> 2pcs. of BBQ tender chicken loins, avocado, mixed green salad, tomatoes, egg, special dressing soy mustard.</p>
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="product-item-wrapper">
+        <a [routerLink]="['LoggedInSuccessfully/menuSalads',information[11].headerInfo]">
+          <img src="../../../assets/salats/fit_600_376 (11).png" height="175" width="380" class="images"/>
+        </a>
+        <h3 data-key="12" class="text" style="text-align: center;">Crispy squid caesar</h3>
+        <ul class="price">
+          <li><p  class="text" data-key="12" style="">13.79 lv |  290 gr</p></li>
+        </ul>
+        <ul class="product-action">
+          <a class="link" [routerLink]="['LoggedInSuccessfully/menuSalads',information[11].headerInfo]"> <button class="button button3" data-key="11">Change</button></a>
+
+          <button  class="button button1" data-key="12" (click)="buyElement($event)">Buy</button>
+        </ul>
+        <p class="display">Mixed green salad, roasted bacon, crispy squid, croutons, parmesan, Caesar sauce.</p>
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="product-item-wrapper">
+        <a [routerLink]="['LoggedInSuccessfully/menuSalads',information[12].headerInfo]">
+          <img src="../../../assets/salats/fit_600_376 (12).png" height="175" width="380" class="images"/></a>
+        <h3 data-key="13" class="text" style="text-align: center;">Shopska salad</h3>
+        <ul class="price">
+          <li><p class="text" data-key="13" style="font-size: 18px;">8.69 lv | 390 gr</p></li>
+        </ul>
+        <ul class="product-action">
+          <a class="link" [routerLink]="['LoggedInSuccessfully/menuSalads',information[12].headerInfo]"> <button class="button button3" data-key="1">Change</button></a>
+
+          <button  class="button button1" data-key="13" (click)="buyElement($event)">Buy</button>
+        </ul>
+        <p class="display">Tomatoes, cucumbers, cheese, onions, parsley, olive oil.</p>
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="product-item-wrapper">
+        <a [routerLink]="['LoggedInSuccessfully/menuSalads',information[13].headerInfo]">
+          <img src="../../../assets/salats/fit_600_376 (13).png" height="175" width="380" class="images"/>
+
+        </a>
+        <h3 data-key="14" class="text" style="text-align: center;">Greek salad</h3>
+        <ul class="price">
+          <li><p  class="text" data-key="14" style="">8.29 lv |  370 gr</p></li>
+        </ul>
+        <ul class="product-action">
+          <a class="link" [routerLink]="['LoggedInSuccessfully/menuSalads',information[13].headerInfo]"> <button class="button button3" data-key="1">Change</button></a>
+
+          <button  class="button button1" data-key="14" (click)="buyElement($event)">Buy</button>
+        </ul>
+        <p class="display">Tomatoes, cucumbers, fresh peppers, withe cheese, red onions, olives, aromatic olive oil and oregano, parsley and black pepper.</p>
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="product-item-wrapper">
+        <a [routerLink]="['LoggedInSuccessfully/menuSalads',information[14].headerInfo]">
+          <img src="../../../assets/salats/fit_600_376 (14).png" height="175" width="380" class="images"/>
+        </a>
+        <h3 data-key="15" class="text" style="text-align: center;">Wakame</h3>
+        <ul class="price">
+          <li><p  class="text" data-key="15" style="">6.79 lv |  140 gr</p></li>
+        </ul>
+        <ul class="product-action">
+
+          <a class="link" [routerLink]="['LoggedInSuccessfully/menuSalads',information[14].headerInfo]"> <button class="button button3" data-key="1">Change</button></a>
+
+          <button  class="button button1" data-key="15" (click)="buyElement($event)">Buy</button>
+        </ul>
+        <p class="display">Crispy Seaweed with sesame.</p>
+      </div>
+    </div>
+
+
+
+  </div>
+</div>
+
+
+
+</body>
+</html>

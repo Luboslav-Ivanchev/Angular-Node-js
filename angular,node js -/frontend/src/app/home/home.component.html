@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+</head>
+
+<body>
+
+
+
+<section class="showcase-area" id="showcase">
+  <div class="showcase-container">
+    <h1 class="main-title" id="home">Eat Right Food</h1>
+    <p>Eat Healty, it is good for our health.</p>
+    <button style="width: 200px;height:50px;border-style: none" class="btn btn-primary">Menu</button>
+  </div>
+</section>
+
+<section id="about">
+  <div class="about-wrapper container">
+    <div class="about-text">
+      <p class="small">About Us</p>
+      <h2>We've beem making healthy food last for 10 years</h2>
+      <p>
+        Let your loyal customers know you’re thinking of them. Invite them in for a free birthday dessert!
+
+        Always send these messages in the morning so the birthday girl/boy has a chance to make plans. It will also help to brighten their whole day.
+
+        Don’t know the dates? This is an opportunity to bond with your subscribers. Reach out anytime and ask them to respond with their day/month for yearly surprises.
+      </p>
+    </div>
+    <div class="about-img">
+      <div class="slideshow-container">
+
+        <div class="fade">
+          <img class="mySlides" src="../../assets/sushi/fit_600_376 (2).png">
+
+        </div>
+
+        <div class=" fade">
+
+          <img class="mySlides" src="../../assets/salats/fit_600_376 (2).png">
+
+        </div>
+
+        <div class=" fade">
+          <img class="mySlides" src="../../assets/pizza/fit_600_376 (3).png">
+        </div>
+
+        <div class=" fade">
+          <img class="mySlides"  src="../../assets/pasta/fit_600_376 (6).png"/>
+        </div>
+
+        <div class=" fade">
+          <img class="mySlides" src="../../assets/dishes/fit_600_376 (6).png"/>
+        </div>
+
+        <div class=" fade">
+          <img class="mySlides" src="../../assets/burgers/fit_600_376 (3).png"/>
+        </div>
+
+        <div class=" fade">
+          <img class="mySlides" src="../../assets/desserts/fit_600_376 (4).png"/>
+        </div>
+
+
+      </div>
+      <br>
+
+      <div style="text-align:center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+
+
+
+
+    </div>
+  </div>
+
+</section>
+
+
+<section id="food">
+  <h2>Types of food</h2>
+  <div class="food-container container">
+    <div class="food-type fruite">
+      <div class="img-container">
+        <img src="https://i.postimg.cc/yxThVPXk/food1.jpg" alt="error" />
+        <div class="img-content">
+          <h3>fruite</h3>
+          <a href="https://en.wikipedia.org/wiki/Fruit" class="btn btn-primary" target="blank">learn
+            more</a>
+        </div>
+      </div>
+    </div>
+    <div class="food-type vegetable">
+      <div class="img-container">
+        <img src="https://i.postimg.cc/Nffm6Rkk/food2.jpg" alt="error" />
+        <div class="img-content">
+          <h3>vegetable</h3>
+          <a href="https://en.wikipedia.org/wiki/Vegetable" class="btn btn-primary" target="blank">learn
+            more</a>
+        </div>
+      </div>
+    </div>
+    <div class="food-type grin">
+      <div class="img-container">
+        <img src="https://i.postimg.cc/76ZwsPsd/food3.jpg" alt="error" />
+        <div class="img-content">
+          <h3>grin</h3>
+          <a href="https://en.wikipedia.org/wiki/Grain" class="btn btn-primary" target="blank">learn
+            more</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="food-menu" *ngIf="urlStatement!=='LoggedInSuccessfully'">
+  <h2 class="food-menu-heading">Food Menu</h2>
+  <div class="food-menu-container container">
+    <div class="food-menu-item">
+      <br>
+      <div class="title">
+        <a href="/sushi" class="viewBtn"><img src="../../assets/Menu-Images/fit_600_376 (2).png" height="30" width="20"/></a>
+      </div>
+      <div class="food-description">
+        <h2 class="food-titile"><a href="/sushi" class="viewBtn">Sushi</a></h2>
+        <p>
+          Healthy, tasty, fresh - Narru rolls for happy people. You are also always looking for our new sushi offerings.
+        </p>
+        <a href="/sushi" class="btn btn-primary">Check out the menu></a>
+      </div>
+    </div>
+
+    <div class="food-menu-item">
+      <div class="title">
+        <a href="/dishes" class="viewBtn"><img
+          src="../../assets/dishes/fit_600_376 (3).png" height="376" width="600"/>
+        </a>
+      </div>
+      <div class="food-description">
+        <h2 class="food-titile"><a href="/dishes" class="viewBtn">Main dishes</a></h2>
+        <p>
+          A wide variety of favorite recipes are waiting for you to try!
+        </p>
+        <a href="/dishes" class="btn btn-primary">Check out the menu></a>
+      </div>
+    </div>
+
+    <div class="food-menu-item">
+      <div class="title">
+        <a href="/pizza" class="viewBtn"><img
+          src="../../assets/Menu-Images/fit_600_376 (3).png" height="376" width="600"/>
+        </a>
+      </div>
+      <div class="food-description">
+        <h2 class="food-titile"><a href="/pizza" class="viewBtn">Pizza</a></h2>
+        <p>
+          Pizza Catering provides the perfect solution for your special occasion needs.
+          Extra condiments available upon request for an additional charge.
+        </p>
+        <a href="/pizza" class="btn btn-primary">Check out the menu></a>
+      </div>
+    </div>
+
+    <div class="food-menu-item">
+      <div class="title">
+        <a href="/pasta" class="viewBtn"><img
+          src="../../assets/Menu-Images/09112015_15minute_pastasauce_tomato.webp" height="2512" width="3768"/>
+        </a>
+      </div>
+      <div class="food-description">
+        <h2 class="food-titile"><a href="/pasta" class="viewBtn">Pasta</a></h2>
+        <p>
+          Pasta is a flour-based product of various origins, characteristic of all regional cuisines in Italy.
+        </p>
+        <a href="/pasta" class="btn btn-primary">Check out the menu></a>
+      </div>
+    </div>
+    <div class="food-menu-item">
+      <div class="title">
+        <a href="/burgers" class="viewBtn">
+          <img src="../../assets/Menu-Images/fit_600_376.png" height="376" width="600"/>
+        </a>
+      </div>
+      <div class="food-description">
+        <h2 class="food-titile"><a href="/burgers" class="viewBtn">Burgers</a></h2>
+        <p>
+          Sink your teeth into a delicious restaurant-style, hamburger recipe made from lean beef.
+          Skip the prepackaged patties and take the extra time to craft up your own, and that little extra effort will be worth it.
+        </p>
+        <a href="/burgers" class="btn btn-primary">Check out the menu></a>
+      </div>
+    </div>
+
+    <div class="food-menu-item">
+      <div class="title">
+        <a href="/salads" class="viewBtn"><img
+          src="../../assets/Menu-Images/fit_600_376 (1).png" height="376" width="600"/>
+        </a>
+      </div>
+      <div class="food-description">
+        <h2 class="food-titile"><a href="/salads" class="viewBtn">Salads</a></h2>
+        <p>
+          Salads can be healthy, satisfying meals on their own or perfect accompaniments to main dishes.
+          Whatever sort of salad you’re after, we’ve got a great selection of salad recipes guaranteed to please.
+        </p>
+        <a href="/salads" class="btn btn-primary">Check out the menu></a>
+      </div>
+    </div>
+
+    <div class="food-menu-item">
+      <div class="title">
+        <a href="/deserts" class="viewBtn"><img
+          src="../../assets/Menu-Images/fit_600_376 (453).png" height="376" width="600"/>
+        </a>
+      </div>
+      <div class="food-description">
+        <h2 class="food-titile"><a href="/deserts" class="viewBtn">Desserts</a></h2>
+        <p>
+
+          Desserts are everyone's favorite part of the meal. In most cultures, these delicious sweet dishes come at the
+          very end of the main course,and can be served in all shapes and tastes – cakes, cookies, pies, even sweet soups, you name it!
+
+        </p>
+        <a href="/deserts" class="btn btn-primary">Check out the menu></a>
+      </div>
+    </div>
+
+
+    <div class="food-menu-item">
+      <div class="title">
+        <a href="/liquids" class="viewBtn"> <img
+          src="../../assets/Menu-Images/fit_600_376675.png" height="376" width="600"/>
+        </a>
+      </div>
+      <div class="food-description">
+        <h2 class="food-titile"><a href="/liquids" class="viewBtn">Liquids</a></h2>
+        <p>
+          Lemonades, Non-alcoholic, fresh, beer, wines,
+          whiskeys,
+        </p>
+        <a href="/liquids" class="btn btn-primary">Check out the menu></a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="food-menu" *ngIf="urlStatement==='LoggedInSuccessfully'">
+  <h2 class="food-menu-heading">Food Menu</h2>
+  <div class="food-menu-container container">
+    <div class="food-menu-item">
+      <br>
+      <div class="title">
+        <a href="/LoggedInSuccessfully/sushi" class="viewBtn"><img src="../../assets/Menu-Images/fit_600_376 (2).png" height="30" width="20"/></a>
+      </div>
+      <div class="food-description">
+        <h2 class="food-titile"><a href="/LoggedInSuccessfully/sushi" class="viewBtn">Sushi</a></h2>
+        <p>
+          Healthy, tasty, fresh - Narru rolls for happy people. You are also always looking for our new sushi offerings.
+        </p>
+        <a href="/LoggedInSuccessfully/sushi" class="btn btn-primary">Check out the menu></a>
+      </div>
+    </div>
+
+    <div class="food-menu-item">
+      <div class="title">
+        <a href="LoggedInSuccessfully/dishes" class="viewBtn"><img
+          src="../../assets/dishes/fit_600_376 (3).png" height="376" width="600"/>
+        </a>
+      </div>
+      <div class="food-description">
+        <h2 class="food-titile"><a href="LoggedInSuccessfully/dishes" class="viewBtn">Main dishes</a></h2>
+        <p>
+          A wide variety of favorite recipes are waiting for you to try!
+        </p>
+        <a href="LoggedInSuccessfully/dishes" class="btn btn-primary">Check out the menu></a>
+      </div>
+    </div>
+
+    <div class="food-menu-item">
+      <div class="title">
+        <a href="LoggedInSuccessfully/pizza" class="viewBtn"><img
+          src="../../assets/Menu-Images/fit_600_376 (3).png" height="376" width="600"/>
+        </a>
+      </div>
+      <div class="food-description">
+        <h2 class="food-titile"><a href="LoggedInSuccessfully/pizza" class="viewBtn">Pizza</a></h2>
+        <p>
+          Pizza Catering provides the perfect solution for your special occasion needs.
+          Extra condiments available upon request for an additional charge.
+        </p>
+        <a href="LoggedInSuccessfully/pizza" class="btn btn-primary">Check out the menu></a>
+      </div>
+    </div>
+
+    <div class="food-menu-item">
+      <div class="title">
+        <a href="LoggedInSuccessfully/pasta" class="viewBtn"><img
+          src="../../assets/Menu-Images/09112015_15minute_pastasauce_tomato.webp" height="2512" width="3768"/>
+        </a>
+      </div>
+      <div class="food-description">
+        <h2 class="food-titile"><a href="LoggedInSuccessfully/pasta" class="viewBtn">Pasta</a></h2>
+        <p>
+          Pasta is a flour-based product of various origins, characteristic of all regional cuisines in Italy.
+        </p>
+        <a href="LoggedInSuccessfully/pasta" class="btn btn-primary">Check out the menu></a>
+      </div>
+    </div>
+
+    <div class="food-menu-item">
+      <div class="title">
+        <a href="LoggedInSuccessfully/burgers" class="viewBtn">
+          <img src="../../assets/Menu-Images/fit_600_376.png" height="376" width="600"/>
+        </a>
+      </div>
+      <div class="food-description">
+        <h2 class="food-titile"><a href="LoggedInSuccessfully/burgers" class="viewBtn">Burgers</a></h2>
+        <p>
+          Sink your teeth into a delicious restaurant-style, hamburger recipe made from lean beef.
+          Skip the prepackaged patties and take the extra time to craft up your own, and that little extra effort will be worth it.
+        </p>
+        <a href="LoggedInSuccessfully/burgers" class="btn btn-primary">Check out the menu></a>
+      </div>
+    </div>
+
+    <div class="food-menu-item">
+      <div class="title">
+        <a href="LoggedInSuccessfully/salads" class="viewBtn"><img
+          src="../../assets/Menu-Images/fit_600_376 (1).png" height="376" width="600"/>
+        </a>
+      </div>
+      <div class="food-description">
+        <h2 class="food-titile"><a href="LoggedInSuccessfully/salads" class="viewBtn">Salads</a></h2>
+        <p>
+          Salads can be healthy, satisfying meals on their own or perfect accompaniments to main dishes.
+          Whatever sort of salad you’re after, we’ve got a great selection of salad recipes guaranteed to please.
+        </p>
+        <a href="LoggedInSuccessfully/salads" class="btn btn-primary">Check out the menu></a>
+      </div>
+    </div>
+
+    <div class="food-menu-item">
+      <div class="title">
+        <a href="LoggedInSuccessfully/deserts" class="viewBtn"><img
+          src="../../assets/Menu-Images/fit_600_376 (453).png" height="376" width="600"/>
+        </a>
+      </div>
+      <div class="food-description">
+        <h2 class="food-titile"><a href="LoggedInSuccessfully/deserts" class="viewBtn">Desserts</a></h2>
+        <p>
+
+          Desserts are everyone's favorite part of the meal. In most cultures, these delicious sweet dishes come at the
+          very end of the main course,and can be served in all shapes and tastes – cakes, cookies, pies, even sweet soups, you name it!
+
+        </p>
+        <a href="LoggedInSuccessfully/deserts" class="btn btn-primary">Check out the menu></a>
+      </div>
+    </div>
+
+
+    <div class="food-menu-item">
+      <div class="title">
+        <a href="LoggedInSuccessfully/liquids" class="viewBtn"> <img
+          src="../../assets/Menu-Images/fit_600_376675.png" height="376" width="600"/>
+        </a>
+      </div>
+      <div class="food-description">
+        <h2 class="food-titile"><a href="LoggedInSuccessfully/liquids" class="viewBtn">Liquids</a></h2>
+        <p>
+          Lemonades, Non-alcoholic, fresh, beer, wines,
+          whiskeys,
+        </p>
+        <a href="LoggedInSuccessfully/liquids" class="btn btn-primary">Check out the menu></a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<router-outlet></router-outlet>
+
+
+
+
+</body>
+
+</html>

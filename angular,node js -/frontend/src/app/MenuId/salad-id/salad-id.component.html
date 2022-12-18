@@ -1,0 +1,32 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Page Title</title>
+</head>
+<body>
+
+
+<div class="card">
+  <h2 style="text-align:center">{{infoArray.headerInfo}}</h2>
+  <img src="{{infoArray.img}}" alt="Denim Jeans" style="width:100%">
+  <p class="price">{{infoArray.price}}lv | {{infoArray.weight}}gr</p>
+  <p>{{infoArray.text}}</p>
+  <p><button class="need" (click)="need($event)">Need more?</button></p>
+  <div class="buttonsPlusMinus" style="display: none">
+    <div class="btns" style="text-align: center" >
+      <p class="text" style="font-weight: bold">Weight | Final price</p>
+      <button class="btn btn3"  (click)="minus($event)">-</button>
+      <input  class="weight"  type="text"><cite style="font-weight: bold;font-size: 25px">|</cite>
+      <input  class="prices"  type="text">
+
+      <button    class="btn btn1" (click)="plus($event)">+</button>
+
+    </div>
+  </div>
+  <p><button class="need" (click)="buyElement($event)">Buy</button></p>
+</div>
+</body>
+</html>
+

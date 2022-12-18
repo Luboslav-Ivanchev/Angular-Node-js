@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en" dir="ltr" xmlns="http://www.w3.org/1999/html">
+<head>
+  <meta charset="utf-8">
+  <title>Responsive Navbar with Search Box | CodingNepal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+
+
+
+<nav >
+  <div class="menu-icon">
+    <span class="fas fa-bars"></span>
+  </div>
+
+
+
+  <div class="logo" *ngIf="urlStatement!=='LoggedInSuccessfully'" >
+    <a routerLink="cart-service" class="nav_links"> <div class="icon-cart">
+      <div class="cart-line-1" style="background-color: #2CC3B5"></div>
+      <div class="cart-line-2" style="background-color: #2CC3B5"></div>
+      <div class="cart-line-3" style="background-color: #2CC3B5"></div>
+      <div class="cart-wheel" style="background-color: #2CC3B5"></div>
+    </div>
+    </a>
+  </div>
+
+
+  <div class="logo" *ngIf="urlStatement==='LoggedInSuccessfully'" >
+    <a routerLink="LoggedInSuccessfully/cart-service" class="nav_links"> <div class="icon-cart">
+      <div class="cart-line-1" style="background-color: #2CC3B5"></div>
+      <div class="cart-line-2" style="background-color: #2CC3B5"></div>
+      <div class="cart-line-3" style="background-color: #2CC3B5"></div>
+      <div class="cart-wheel" style="background-color: #2CC3B5"></div>
+    </div>
+    </a>
+  </div>
+
+  <div  class="nav-items">
+
+    <li *ngIf="urlStatement!=='LoggedInSuccessfully'" ><a routerLink="home">Home</a></li>
+    <li *ngIf="urlStatement!=='LoggedInSuccessfully'" ><a routerLink="register">Register</a></li>
+    <li *ngIf="urlStatement!=='LoggedInSuccessfully'" ><a routerLink="login">Login</a></li>
+    <li *ngIf="urlStatement!=='LoggedInSuccessfully'" > <a routerLink="contact">Contact</a></li>
+
+
+    <li *ngIf="urlStatement==='LoggedInSuccessfully'"><a routerLink="LoggedInSuccessfully/home">Home</a></li>
+    <li *ngIf="urlStatement==='LoggedInSuccessfully'"><a routerLink="LoggedInSuccessfully/my-profile">My Profile</a></li>
+    <li *ngIf="urlStatement==='LoggedInSuccessfully'"><a routerLink="LoggedInSuccessfully/contact">Contact</a></li>
+    <li *ngIf="urlStatement==='LoggedInSuccessfully'"><a routerLink="" (click)="logout($event)">Logout</a></li>
+
+
+  </div>
+
+  <div class="search-icon">
+    <span class="fas fa-search"></span>
+  </div>
+  <div class="cancel-icon">
+    <span class="fas fa-times"></span>
+  </div>
+  <form action="#">
+    <input type="search" class="search-data" placeholder="Search" required>
+    <button  class="fas fa-search" (click)="urlEvent($event)"></button>
+  </form>
+
+
+
+</nav>
+
+
+
+
+
+</body>
+</html>

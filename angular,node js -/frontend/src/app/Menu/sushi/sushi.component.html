@@ -1,0 +1,572 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sushi</title>
+</head>
+<body>
+
+<div class="switcher__item__containers">
+  <div class="boxCheck">
+    <p>No raw fish</p>
+    <label class="switch">
+      <input type="checkbox" (click)="rawFish($event)">
+      <span class="slider round"></span>
+    </label>
+  </div>
+  &nbsp;
+  &nbsp;
+  &nbsp;
+  <div class="boxCheck">
+    <p style="text-align: center">Small</p>
+    <label class="switch">
+      <input type="checkbox" (click)="small($event)">
+      <span class="slider round"></span>
+    </label>
+  </div>
+  &nbsp;
+  &nbsp;
+  &nbsp;
+
+  <div class="boxCheck">
+    <p style="text-align: center">Combo</p>
+    <label class="switch">
+      <input type="checkbox">
+      <span class="slider round" (click)="combo($event)"></span>
+    </label>
+  </div>
+
+
+
+</div>
+
+
+<div class="ifNot" *ngIf="urlStatement!=='LoggedInSuccessfully'">
+  <div class="container"  *ngFor="let data of info">
+
+    <div class="box">
+      <div class="product-item-wrapper">
+        <a [routerLink]="['/sushi',data[0].headerInfo]">
+          <img src="{{data[0].img}}" height="175" width="380" class="images"
+          /></a>
+        <h3 data-key="2" class="text"   >{{data[0].headerInfo}}</h3>
+        <ul class="price">
+          <li><p  data-key="2" class="text2">{{data[0].price}} lv |  {{data[0].weight}} gr</p></li>
+        </ul>
+        <ul class="product-action">
+
+          <a class="link" [routerLink]="['/sushi',data[0].headerInfo]"><button class="button button3" data-key="2">Change</button></a>
+          <button  class="button button1" data-key="2" (click)="buyElement($event)">Buy</button>
+        </ul>
+
+
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="product-item-wrapper">
+        <a [routerLink]="['/sushi',data[1].headerInfo]">
+          <img src="{{data[1].img}}" height="175" width="380" class="images"/></a>
+        <h3 data-key="2" class="text">{{data[1].headerInfo}}</h3>
+        <ul class="price">
+          <li><p  data-key="2" class="text2">{{data[1].price}} lv |  {{data[1].weight}} gr</p></li>
+        </ul>
+        <ul class="product-action">
+
+          <a class="link" [routerLink]="['/sushi',data[1].headerInfo]"><button class="button button3" data-key="2">Change</button></a>
+          <button  class="button button1" data-key="2" (click)="buyElement($event)">Buy</button>
+        </ul>
+
+      </div>
+    </div>
+
+
+    <div class="box">
+      <div class="product-item-wrapper">
+        <a [routerLink]="['/sushi',data[2].headerInfo]">
+          <img src="{{data[2].img}}" height="175" width="380" class="images"/></a>
+        <h3 data-key="2" class="text">{{data[2].headerInfo}}</h3>
+        <ul class="price">
+          <li><p  data-key="2" class="text2">{{data[2].price}} lv |  {{data[2].weight}} gr</p></li>
+        </ul>
+        <ul class="product-action">
+
+          <a class="link" [routerLink]="['/sushi',data[2].headerInfo]"><button class="button button3" data-key="2">Change</button></a>
+          <button  class="button button1" data-key="2" (click)="buyElement($event)">Buy</button>
+        </ul>
+
+
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="product-item-wrapper">
+        <a [routerLink]="['/sushi',data[3].headerInfo]">
+          <img src="{{data[3].img}}" height="175" width="380" class="images"/></a>
+        <h3 data-key="2" class="text">{{data[3].headerInfo}}</h3>
+        <ul class="price">
+          <li><p  data-key="2" class="text2">{{data[3].price}} lv |  {{data[3].weight}} gr</p></li>
+        </ul>
+        <ul class="product-action">
+
+          <a class="link" [routerLink]="['/sushi',data[3].headerInfo]"><button class="button button3" data-key="2">Change</button></a>
+          <button  class="button button1" data-key="2" (click)="buyElement($event)">Buy</button>
+        </ul>
+
+
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="product-item-wrapper">
+        <a [routerLink]="['/sushi',data[5].headerInfo]">
+          <img src="{{data[5].img}}" height="175" width="380" class="images"/></a>
+        <h3 data-key="2" class="text">{{data[5].headerInfo}}</h3>
+        <ul class="price">
+          <li><p  data-key="2" class="text2">{{data[5].price}} lv |  {{data[5].weight}} gr</p></li>
+        </ul>
+        <ul class="product-action">
+
+          <a class="link" [routerLink]="['/sushi',data[5].headerInfo]"><button class="button button3" data-key="2">Change</button></a>
+          <button  class="button button1" data-key="2" (click)="buyElement($event)">Buy</button>
+        </ul>
+
+
+      </div>
+    </div>
+
+
+    <div class="box">
+      <div class="product-item-wrapper">
+        <a [routerLink]="['/sushi',data[6].headerInfo]">
+          <img src="{{data[6].img}}" height="175" width="380" class="images"/></a>
+        <h3 data-key="2" class="text">{{data[6].headerInfo}}</h3>
+        <ul class="price">
+          <li><p  data-key="2" class="text2">{{data[6].price}} lv |  {{data[6].weight}} gr</p></li>
+        </ul>
+        <ul class="product-action">
+
+          <a class="link" [routerLink]="['/sushi',data[6].headerInfo]"><button class="button button3" data-key="2">Change</button></a>
+          <button  class="button button1" data-key="2" (click)="buyElement($event)">Buy</button>
+        </ul>
+
+
+      </div>
+    </div>
+
+
+    <div class="box">
+      <div class="product-item-wrapper">
+        <a [routerLink]="['/sushi',data[7].headerInfo]">
+          <img src="{{data[7].img}}" height="175" width="380" class="images"/></a>
+        <h3 data-key="2" class="text">{{data[7].headerInfo}}</h3>
+        <ul class="price">
+          <li><p  data-key="2" class="text2">{{data[7].price}} lv |  {{data[7].weight}} gr</p></li>
+        </ul>
+        <ul class="product-action">
+
+          <a class="link" [routerLink]="['/sushi',data[7].headerInfo]"><button class="button button3" data-key="2">Change</button></a>
+          <button  class="button button1" data-key="2" (click)="buyElement($event)">Buy</button>
+        </ul>
+
+
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="product-item-wrapper">
+        <a [routerLink]="['/sushi',data[8].headerInfo]">
+          <img src="{{data[8].img}}" height="175" width="380" class="images"/></a>
+        <h3 data-key="2" class="text">{{data[8].headerInfo}}</h3>
+        <ul class="price">
+          <li><p  data-key="2" class="text2">{{data[8].price}} lv |  {{data[8].weight}} gr</p></li>
+        </ul>
+        <ul class="product-action">
+
+          <a class="link" [routerLink]="['/sushi',data[8].headerInfo]"><button class="button button3" data-key="2">Change</button></a>
+          <button  class="button button1" data-key="2" (click)="buyElement($event)">Buy</button>
+        </ul>
+
+
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="product-item-wrapper">
+        <a [routerLink]="['/sushi',data[9].headerInfo]">
+          <img src="{{data[9].img}}" height="175" width="380" class="images"/></a>
+        <h3 data-key="2" class="text">{{data[9].headerInfo}}</h3>
+        <ul class="price">
+          <li><p  data-key="2" class="text2">{{data[9].price}} lv |  {{data[9].weight}} gr</p></li>
+        </ul>
+        <ul class="product-action">
+
+          <a class="link" [routerLink]="['/sushi',data[9].headerInfo]"><button class="button button3" data-key="2">Change</button></a>
+          <button  class="button button1" data-key="2" (click)="buyElement($event)">Buy</button>
+        </ul>
+
+
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="product-item-wrapper">
+        <a [routerLink]="['/sushi',data[10].headerInfo]">
+          <img src="{{data[10].img}}" height="175" width="380" class="images"/></a>
+        <h3 data-key="2" class="text">{{data[10].headerInfo}}</h3>
+        <ul class="price">
+          <li><p  data-key="2" class="text2">{{data[10].price}} lv |  {{data[10].weight}} gr</p></li>
+        </ul>
+        <ul class="product-action">
+
+          <a class="link" [routerLink]="['/sushi',data[10].headerInfo]"><button class="button button3" data-key="2">Change</button></a>
+          <button  class="button button1" data-key="2" (click)="buyElement($event)">Buy</button>
+        </ul>
+
+
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="product-item-wrapper">
+        <a [routerLink]="['/sushi',data[11].headerInfo]">
+          <img src="{{data[11].img}}" height="175" width="380" class="images"/></a>
+        <h3 data-key="2" class="text">{{data[11].headerInfo}}</h3>
+        <ul class="price">
+          <li><p  data-key="2" class="text2">{{data[11].price}} lv |  {{data[11].weight}} gr</p></li>
+        </ul>
+        <ul class="product-action">
+
+          <a class="link" [routerLink]="['/sushi',data[11].headerInfo]"><button class="button button3" data-key="2">Change</button></a>
+          <button  class="button button1" data-key="2" (click)="buyElement($event)">Buy</button>
+        </ul>
+
+
+      </div>
+    </div>
+
+
+    <div class="box">
+      <div class="product-item-wrapper">
+        <a [routerLink]="['/sushi',data[12].headerInfo]">
+          <img src="{{data[12].img}}" height="175" width="380" class="images"/></a>
+        <h3 data-key="2" class="text">{{data[12].headerInfo}}</h3>
+        <ul class="price">
+          <li><p  data-key="2" class="text2">{{data[12].price}} lv |  {{data[12].weight}} gr</p></li>
+        </ul>
+        <ul class="product-action">
+
+          <a class="link" [routerLink]="['/sushi',data[12].headerInfo]"><button class="button button3" data-key="2">Change</button></a>
+          <button  class="button button1" data-key="2" (click)="buyElement($event)">Buy</button>
+        </ul>
+
+
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="product-item-wrapper">
+        <a [routerLink]="['/sushi',data[13].headerInfo]">
+          <img src="{{data[13].img}}" height="175" width="380" class="images"/></a>
+        <h3 data-key="2" class="text">{{data[13].headerInfo}}</h3>
+        <ul class="price">
+          <li><p  data-key="2" class="text2">{{data[13].price}} lv |  {{data[13].weight}} gr</p></li>
+        </ul>
+        <ul class="product-action">
+
+          <a class="link" [routerLink]="['/sushi',data[13].headerInfo]"><button class="button button3" data-key="2">Change</button></a>
+          <button  class="button button1" data-key="2" (click)="buyElement($event)">Buy</button>
+        </ul>
+
+
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="product-item-wrapper">
+        <a [routerLink]="['/sushi',data[14].headerInfo]">
+          <img src="{{data[14].img}}" height="175" width="380" class="images"/></a>
+        <h3 data-key="2" class="text">{{data[14].headerInfo}}</h3>
+        <ul class="price">
+          <li><p  data-key="2" class="text2">{{data[14].price}} lv |  {{data[14].weight}} gr</p></li>
+        </ul>
+        <ul class="product-action">
+
+          <a class="link" [routerLink]="['/sushi',data[14].headerInfo]"><button class="button button3" data-key="2">Change</button></a>
+          <button  class="button button1" data-key="2" (click)="buyElement($event)">Buy</button>
+        </ul>
+
+
+      </div>
+    </div>
+
+
+  </div>
+</div>
+
+<div class="if" *ngIf="urlStatement==='LoggedInSuccessfully'">
+
+  <div class="container"  *ngFor="let data of info">
+
+    <div class="box">
+      <div class="product-item-wrapper">
+        <a [routerLink]="['LoggedInSuccessfully/sushi',data[0].headerInfo]">
+          <img src="{{data[0].img}}" height="175" width="380" class="images"/></a>
+        <h3 data-key="2" class="text">{{data[0].headerInfo}}</h3>
+        <ul class="price">
+          <li><p  data-key="2" class="text2">{{data[0].price}} lv |  {{data[0].weight}} gr</p></li>
+        </ul>
+        <ul class="product-action">
+
+          <a class="link" [routerLink]="['LoggedInSuccessfully/sushi',data[0].headerInfo]"><button class="button button3" data-key="2">Change</button></a>
+          <button  class="button button1" data-key="2" (click)="buyElement($event)">Buy</button>
+        </ul>
+
+
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="product-item-wrapper">
+        <a [routerLink]="['LoggedInSuccessfully/sushi',data[1].headerInfo]">
+          <img src="{{data[1].img}}" height="175" width="380" class="images"/></a>
+        <h3 data-key="2" class="text">{{data[1].headerInfo}}</h3>
+        <ul class="price">
+          <li><p  data-key="2" class="text2">{{data[1].price}} lv |  {{data[1].weight}} gr</p></li>
+        </ul>
+        <ul class="product-action">
+
+          <a class="link" [routerLink]="['LoggedInSuccessfully/sushi',data[1].headerInfo]"><button class="button button3" data-key="2">Change</button></a>
+          <button  class="button button1" data-key="2" (click)="buyElement($event)">Buy</button>
+        </ul>
+
+
+      </div>
+    </div>
+
+
+    <div class="box">
+      <div class="product-item-wrapper">
+        <a [routerLink]="['LoggedInSuccessfully/sushi',data[2].headerInfo]">
+          <img src="{{data[2].img}}" height="175" width="380" class="images"/></a>
+        <h3 data-key="2" class="text">{{data[2].headerInfo}}</h3>
+        <ul class="price">
+          <li><p  data-key="2" class="text2">{{data[2].price}} lv |  {{data[2].weight}} gr</p></li>
+        </ul>
+        <ul class="product-action">
+
+          <a class="link" [routerLink]="['LoggedInSuccessfully/sushi',data[2].headerInfo]"><button class="button button3" data-key="2">Change</button></a>
+          <button  class="button button1" data-key="2" (click)="buyElement($event)">Buy</button>
+        </ul>
+
+
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="product-item-wrapper">
+        <a [routerLink]="['LoggedInSuccessfully/sushi',data[3].headerInfo]">
+          <img src="{{data[3].img}}" height="175" width="380" class="images"/></a>
+        <h3 data-key="2" class="text">{{data[3].headerInfo}}</h3>
+        <ul class="price">
+          <li><p  data-key="2" class="text2">{{data[3].price}} lv |  {{data[3].weight}} gr</p></li>
+        </ul>
+        <ul class="product-action">
+
+          <a class="link" [routerLink]="['LoggedInSuccessfully/sushi',data[3].headerInfo]"><button class="button button3" data-key="2">Change</button></a>
+          <button  class="button button1" data-key="2" (click)="buyElement($event)">Buy</button>
+        </ul>
+
+
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="product-item-wrapper">
+        <a [routerLink]="['LoggedInSuccessfully/sushi',data[5].headerInfo]">
+          <img src="{{data[5].img}}" height="175" width="380" class="images"/></a>
+        <h3 data-key="2" class="text">{{data[5].headerInfo}}</h3>
+        <ul class="price">
+          <li><p  data-key="2" class="text2">{{data[5].price}} lv |  {{data[5].weight}} gr</p></li>
+        </ul>
+        <ul class="product-action">
+
+          <a class="link" [routerLink]="['LoggedInSuccessfully/sushi',data[5].headerInfo]"><button class="button button3" data-key="2">Change</button></a>
+          <button  class="button button1" data-key="2" (click)="buyElement($event)">Buy</button>
+        </ul>
+
+
+      </div>
+    </div>
+
+
+    <div class="box">
+      <div class="product-item-wrapper">
+        <a [routerLink]="['LoggedInSuccessfully/sushi',data[6].headerInfo]">
+          <img src="{{data[6].img}}" height="175" width="380" class="images"/></a>
+        <h3 data-key="2" class="text">{{data[6].headerInfo}}</h3>
+        <ul class="price">
+          <li><p  data-key="2" class="text2">{{data[6].price}} lv |  {{data[6].weight}} gr</p></li>
+        </ul>
+        <ul class="product-action">
+
+          <a class="link" [routerLink]="['LoggedInSuccessfully/sushi',data[6].headerInfo]"><button class="button button3" data-key="2">Change</button></a>
+          <button  class="button button1" data-key="2" (click)="buyElement($event)">Buy</button>
+        </ul>
+
+
+      </div>
+    </div>
+
+
+    <div class="box">
+      <div class="product-item-wrapper">
+        <a [routerLink]="['LoggedInSuccessfully/sushi',data[7].headerInfo]">
+          <img src="{{data[7].img}}" height="175" width="380" class="images"/></a>
+        <h3 data-key="2" class="text">{{data[7].headerInfo}}</h3>
+        <ul class="price">
+          <li><p  data-key="2" class="text2">{{data[7].price}} lv |  {{data[7].weight}} gr</p></li>
+        </ul>
+        <ul class="product-action">
+
+          <a class="link" [routerLink]="['LoggedInSuccessfully/sushi',data[7].headerInfo]"><button class="button button3" data-key="2">Change</button></a>
+          <button  class="button button1" data-key="2" (click)="buyElement($event)">Buy</button>
+        </ul>
+
+
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="product-item-wrapper">
+        <a [routerLink]="['LoggedInSuccessfully/sushi',data[8].headerInfo]">
+          <img src="{{data[8].img}}" height="175" width="380" class="images"/></a>
+        <h3 data-key="2" class="text">{{data[8].headerInfo}}</h3>
+        <ul class="price">
+          <li><p  data-key="2" class="text2">{{data[8].price}} lv |  {{data[8].weight}} gr</p></li>
+        </ul>
+        <ul class="product-action">
+
+          <a class="link" [routerLink]="['LoggedInSuccessfully/sushi',data[8].headerInfo]"><button class="button button3" data-key="2">Change</button></a>
+          <button  class="button button1" data-key="2" (click)="buyElement($event)">Buy</button>
+        </ul>
+
+
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="product-item-wrapper">
+        <a [routerLink]="['LoggedInSuccessfully/sushi',data[9].headerInfo]">
+          <img src="{{data[9].img}}" height="175" width="380" class="images"/></a>
+        <h3 data-key="2" class="text">{{data[9].headerInfo}}</h3>
+        <ul class="price">
+          <li><p  data-key="2" class="text2">{{data[9].price}} lv |  {{data[9].weight}} gr</p></li>
+        </ul>
+        <ul class="product-action">
+
+          <a class="link" [routerLink]="['LoggedInSuccessfully/sushi',data[9].headerInfo]"><button class="button button3" data-key="2">Change</button></a>
+          <button  class="button button1" data-key="2" (click)="buyElement($event)">Buy</button>
+        </ul>
+
+
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="product-item-wrapper">
+        <a [routerLink]="['LoggedInSuccessfully/sushi',data[10].headerInfo]">
+          <img src="{{data[10].img}}" height="175" width="380" class="images"/></a>
+        <h3 data-key="2" class="text">{{data[10].headerInfo}}</h3>
+        <ul class="price">
+          <li><p  data-key="2" class="text2">{{data[10].price}} lv |  {{data[10].weight}} gr</p></li>
+        </ul>
+        <ul class="product-action">
+
+          <a class="link" [routerLink]="['LoggedInSuccessfully/sushi',data[10].headerInfo]"><button class="button button3" data-key="2">Change</button></a>
+          <button  class="button button1" data-key="2" (click)="buyElement($event)">Buy</button>
+        </ul>
+
+
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="product-item-wrapper">
+        <a [routerLink]="['LoggedInSuccessfully/sushi',data[11].headerInfo]">
+          <img src="{{data[11].img}}" height="175" width="380" class="images"/></a>
+        <h3 data-key="2" class="text">{{data[11].headerInfo}}</h3>
+        <ul class="price">
+          <li><p  data-key="2" class="text2">{{data[11].price}} lv |  {{data[11].weight}} gr</p></li>
+        </ul>
+        <ul class="product-action">
+
+          <a class="link" [routerLink]="['LoggedInSuccessfully/sushi',data[11].headerInfo]"><button class="button button3" data-key="2">Change</button></a>
+          <button  class="button button1" data-key="2" (click)="buyElement($event)">Buy</button>
+        </ul>
+
+
+      </div>
+    </div>
+
+
+    <div class="box">
+      <div class="product-item-wrapper">
+        <a [routerLink]="['LoggedInSuccessfully/sushi',data[12].headerInfo]">
+          <img src="{{data[12].img}}" height="175" width="380" class="images"/></a>
+        <h3 data-key="2" class="text">{{data[12].headerInfo}}</h3>
+        <ul class="price">
+          <li><p  data-key="2" class="text2">{{data[12].price}} lv |  {{data[12].weight}} gr</p></li>
+        </ul>
+        <ul class="product-action">
+
+          <a class="link" [routerLink]="['LoggedInSuccessfully/sushi',data[12].headerInfo]"><button class="button button3" data-key="2">Change</button></a>
+          <button  class="button button1" data-key="2" (click)="buyElement($event)">Buy</button>
+        </ul>
+
+
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="product-item-wrapper">
+        <a [routerLink]="['LoggedInSuccessfully/sushi',data[13].headerInfo]">
+          <img src="{{data[13].img}}" height="175" width="380" class="images"/></a>
+        <h3 data-key="2" class="text">{{data[13].headerInfo}}</h3>
+        <ul class="price">
+          <li><p  data-key="2" class="text2">{{data[13].price}} lv |  {{data[13].weight}} gr</p></li>
+        </ul>
+        <ul class="product-action">
+
+          <a class="link" [routerLink]="['LoggedInSuccessfully/sushi',data[13].headerInfo]"><button class="button button3" data-key="2">Change</button></a>
+          <button  class="button button1" data-key="2" (click)="buyElement($event)">Buy</button>
+        </ul>
+
+
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="product-item-wrapper">
+        <a [routerLink]="['LoggedInSuccessfully/sushi',data[14].headerInfo]">
+          <img src="{{data[14].img}}" height="175" width="380" class="images"/></a>
+        <h3 data-key="2" class="text">{{data[14].headerInfo}}</h3>
+        <ul class="price">
+          <li><p  data-key="2" class="text2">{{data[14].price}} lv |  {{data[14].weight}} gr</p></li>
+        </ul>
+        <ul class="product-action">
+
+          <a class="link" [routerLink]="['LoggedInSuccessfully/sushi',data[14].headerInfo]"><button class="button button3" data-key="2">Change</button></a>
+          <button  class="button button1" data-key="2" (click)="buyElement($event)">Buy</button>
+        </ul>
+
+
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+</body>
+</html>
